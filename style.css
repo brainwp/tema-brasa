@@ -1,11 +1,11 @@
 /*
 
-Theme Name: Brasa v0.1
+Theme Name: Tema Brasa
 Template: twentyeleven
-Theme URI: http://wordpress.org/
+Theme URI: http://brasa.art.br/
 Description: Tema para o site brasa.art.br.
 Author: Brasa Design e Tecnologia
-Version: 0.1
+Version: 0.3
 License: GNU General Public License
 
 */
@@ -14,7 +14,7 @@ License: GNU General Public License
 -------------------------------------------------------------- */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -64,7 +64,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-
 /* =Structure
 ----------------------------------------------- */
 
@@ -97,7 +96,7 @@ body {
 }
 .singular #content,
 .left-sidebar.singular #content {
-	margin: 0 3% 0 10%;
+	margin: 0 3%;
 	position: relative;
 	width: auto;
 }
@@ -106,7 +105,7 @@ body {
 .singular footer.entry-meta,
 .singular #comments-title {
 	margin: 0 auto;
-	width: 68.9%;
+	width: 88.9%;
 }
 
 /* Attachments */
@@ -147,8 +146,9 @@ body {
 	margin: 0;
 }
 .error404 #primary #content {
-	margin: 0 7.6%;
-	width: auto;
+    float: none;
+	margin: 3em auto 1em;
+    max-width: 900px;
 }
 
 /* Alignment */
@@ -172,18 +172,22 @@ body {
 /* Right Content */
 .left-sidebar #primary {
 	float: right;
-	margin: 0 0 0 -26.4%;
+	margin: 0 0 0 -33%;
 	width: 100%;
 }
 .left-sidebar #content {
-	margin: 0 7.6% 0 34%;
-	width: 58.4%;
+ margin: 5% 3% 0 38%;
+    width: 56%;
 }
 .left-sidebar #secondary {
-	float: left;
-	margin-left: 7.6%;
-	margin-right: 0;
-	width: 18.8%;
+	background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+	margin: 5% 0 3% 3%;
+    padding: 3%;
+    width: 24%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 }
 
 /* One column */
@@ -324,13 +328,13 @@ h1,h2,h3,h4,h5,h6 {
 	clear: both;
 	font-family: 'Source Sans Pro', Arial, Geneva, sans-serif;
 	text-transform: uppercase;
-	font-weight: normal;
+	font-weight: bold;
 }
 hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin: 1.5em;
+    margin: 1em 0 1.5em;
 }
 
 /* Text elements */
@@ -571,19 +575,19 @@ a:hover {
 
 #main {
 	clear: both;
-	padding: 1em 0 0;
+	padding: 0;
 }
 .page-title {
 	color: #666;
-	font-size: 10px;
+	font-size: 1.2em;
 	font-weight: 500;
 	letter-spacing: 0.1em;
-	line-height: 2.6em;
-	margin: 0 0 2.6em;
+	line-height: 1.2em;
+	margin: 2em 0;
 	text-transform: uppercase;
 }
 .page-title a {
-	font-size: 12px;
+	font-size: 1.3em;
 	font-weight: bold;
 	letter-spacing: 0;
 	text-transform: none;
@@ -602,7 +606,7 @@ a:hover {
 .blog .sticky .entry-header .entry-meta {
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
+	position: relative !important;
 }
 .entry-title,
 .entry-header .entry-meta {
@@ -646,21 +650,21 @@ a:hover {
 .entry-content h1,
 .comment-content h1 {
 	color: #000;
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0 0 0.4125em;
 	font-size: 220%;
 }
 
 .entry-content h2,
 .comment-content h2 {
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0 0 0.2125em;
 	font-size: 180%;
 }
 .entry-content h3,
 .comment-content h3 {
 	font-size: 140%;
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 2.6em;
 	text-transform: uppercase;
 	margin: 0 0 0.125em;
@@ -753,7 +757,7 @@ dl.gallery-item {
 .entry-content img,
 .comment-content img,
 .widget img {
-	max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+	max-width: 100%; /* Fluid images for posts, comments, and widgets */
 }
 img[class*="align"],
 img[class*="wp-image-"],
@@ -762,7 +766,7 @@ img[class*="attachment-"] {
 }
 img.size-full,
 img.size-large {
-	max-width: 97.5%;
+	max-width: 100%;
 	width: auto; /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
 	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
@@ -790,7 +794,7 @@ p img,
 .wp-caption img {
 	display: block;
 	margin: 0 auto;
-	max-width: 98%;
+	max-width: 100%;
 }
 .wp-caption .wp-caption-text,
 .gallery-caption {
@@ -822,7 +826,7 @@ p img,
 }
 img#wpstats {
 	display: none;
-	margin: 0 auto 1.625em;
+	margin: 0 auto;
 }
 #content .gallery-columns-4 .gallery-item {
 	width: 23%;
@@ -837,8 +841,7 @@ img#wpstats {
 img[class*="align"],
 img[class*="wp-image-"],
 #content .gallery .gallery-icon img {/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
-	border: 1px solid #ddd;
-	padding: 6px;
+	padding: 0;
 }
 .wp-caption img {
 	border-color: #eee;
@@ -986,12 +989,15 @@ article.format-status .entry-content {
 
 /* Singular content styles for Posts and Pages */
 .singular .hentry {
-	border-bottom: none;
-	padding: 4.875em 0 0;
-	position: relative;
+    border-bottom: medium none;
+    margin: 3% 3% 3% 20%;
+	padding: 0 0 1.5em 0;
+    position: relative;
 }
 .singular.page .hentry {
-	padding: 1em 0;
+	padding: 0 0 1.5em 0;
+	margin: 0;
+	
 }
 .singular .entry-title {
 	color: #B843A6;
@@ -1001,10 +1007,11 @@ article.format-status .entry-content {
 }
 .singular .entry-title,
 .singular .entry-header .entry-meta {
-	padding-right: 0;
+    margin: 5% 0 0;
+    padding: 0;
 }
 .singular .entry-header .entry-meta {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 }
@@ -1196,9 +1203,7 @@ blockquote.pull {
 ----------------------------------------------- */
 
 .error404 #main #searchform {
-	background: #f9f9f9;
-	border: 1px solid #ddd;
-	border-width: 1px 0;
+	background: none;
 	margin: 0 -8.9% 1.625em;
 	overflow: hidden;
 	padding: 1.625em 8.9%;
@@ -1354,19 +1359,21 @@ section.feature-image.large .showcase-heading {
 }
 section.feature-image.large .hentry {
     border-bottom: medium none;
-    left: 10%;
-    margin: 2.625em 5% 0 0;
+    left: 8%;
+    margin: 1.5em 5% 0 0;
     position: absolute;
     top: 0;
 }
 article.feature-image.large .entry-title a {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	color: #EEE;
+	color: #FFF;
 	display: inline-block;
 	line-height: 1em;
 	padding: .2em 20px;
 	font-size: 2.5em;
+	text-shadow: 3px 3px 5px #000000;
+    filter: dropshadow(color=#000000, offx=3, offy=3);
 }
 section.feature-image.large:hover .entry-title a,
 section.feature-image.large .entry-title:hover a {
@@ -1378,7 +1385,7 @@ article.feature-image.large .entry-summary {
 section.feature-image.large img {
 	display: block;
 	height: auto;
-	max-width: 115%;
+	max-width: 120%;
 	padding: 0;
 	width: auto;
 }
@@ -1386,7 +1393,7 @@ section.feature-image.large img {
 /* Featured Slider */
 .featured-posts {
 	display: block;
-	height: 275px;
+	height: 300px;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -1397,7 +1404,7 @@ section.feature-image.large img {
 }
 .featured-posts section.featured-post {
 	background: #fff;
-	height: 275px;
+	height: 300px;
 	left: 0;
 	margin: 0;
 	position: absolute;
@@ -1405,7 +1412,7 @@ section.feature-image.large img {
 	width: auto;
 }
 .featured-posts section.featured-post.large {
-	max-width: 100%;
+	max-width: 105%;
 	overflow: hidden;
 }
 .featured-posts section.featured-post {
@@ -1637,10 +1644,10 @@ section.recent-posts .other-recent-posts li:after {
 }
 .widget-title {
 	color: #edb80b;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	font-weight: 500;
 	letter-spacing: 0.1em;
-	line-height: 2.6em;
+	line-height: 1.5em;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -1953,7 +1960,7 @@ a.comment-reply-link > span {
 	margin: 0 auto 1.625em;
 	padding: 1.625em;
 	position: relative;
-	width: 68.9%;
+	width: 52.9%;
 }
 #respond input[type="text"],
 #respond textarea {
@@ -1999,19 +2006,29 @@ a.comment-reply-link > span {
 }
 #respond textarea {
 	resize: vertical;
-	width: 95%;
+	width: 85%;
 }
 #respond .comment-form-author .required,
-#respond .comment-form-email .required {
+#respond .comment-form-email  .required{
 	color: #bd3500;
 	font-size: 22px;
 	font-weight: bold;
 	left: 75%;
-	position: absolute;
-	top: 45px;
+	position: relative;
+	top: 5px;
 	z-index: 1;
 }
-#respond .comment-notes,
+#respond span.required {
+	float: left;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#respond .comment-notes{
+	display:none;
+}
+
+
 #respond .logged-in-as {
 	font-size: 13px;
 }
@@ -2023,7 +2040,7 @@ a.comment-reply-link > span {
 	margin: -20px 0 10px;
 }
 #respond input#submit {
-	background: #2E3192;
+	background: #B463A8;
 	border: none;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -2033,7 +2050,7 @@ a.comment-reply-link > span {
 	color: #eee;
 	cursor: pointer;
 	font-size: 15px;
-	margin: 20px 0;
+	margin: 30px 0;
 	padding: 5px 42px 5px 22px;
 	position: relative;
 	left: 30px;
@@ -2086,7 +2103,7 @@ a.comment-reply-link > span {
 #respond input[type=text] {
 	display: block;
 	height: 24px;
-	width: 75%;
+	width: 85%;
 }
 #respond p {
 	font-size: 12px;
@@ -2116,7 +2133,9 @@ p.comment-form-comment {
 #supplementary {
 	padding: 0 3%;
 	overflow: hidden;
-}
+	width: 94%;
+	margin-top: 1.5%;
+	}
 
 /* Two Footer Widget Areas */
 #supplementary.two .widget-area {
@@ -2162,9 +2181,14 @@ p.comment-form-comment {
 	width: 16px;
 }
 
-
-
-
+/* hide the default responsive menu and menu button */
+h3.menu-toggle {display: none}
+.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {display: none;}
+ 
+/* new responsive selectnav css */
+.selectnav { display: none; }
+select.selectnav {margin:0 auto;} /* centers select */
+ 
 /* =Print
 ----------------------------------------------- */
 
@@ -2356,34 +2380,10 @@ p.comment-form-comment {
 /*
 Mobile Navigation for the WordPress twentyeleven theme.
 */
+
 /* #Menu
 ================================================== */
-nav .access select {
+nav .menu select {
 	display: none;	
 }
 
-
-/* #Media Queries
-================================================== */
-	
-/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 700px) {
-		/* Navigation */
-		nav .menu ul {
-			display: none;	
-		}
-		nav .menu select {
-			display: block;	
-			background: url('images/select-arrows.png') no-repeat scroll right center #FFF;
-			-moz-appearance: none;
-			-webkit-appearance: none;
-			appearance: none;
-			padding: 5px 10px;
-			margin: 10px auto;
-			border: 1px solid #FFF;
-			-moz-border-radius: 5px;
-			-webkit-border-radius: 5px;
-			border-radius: 5px;
-			width: 100%;
-		}
-		}

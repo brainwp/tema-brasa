@@ -98,6 +98,26 @@
 	width:18%;
 	padding:14px 0;
 }
+.submit {
+	margin: 0 0 20px 0;
+	padding: 0;
+	color: #888;
+	font-style: italic;
+}
+
+.reset{
+	padding: 0;
+    border:0;
+    background-color: transparent;
+	cursor: pointer;
+	font-style: italic;
+}
+.reset {
+	color: #21759B;
+}
+.reset:hover {
+	text-decoration: underline;
+}
 
 .clearfix{
 	clear:both;

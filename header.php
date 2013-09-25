@@ -80,11 +80,29 @@ $(document).ready(function(){
     });
 });
 </script>
+<!-- TOGGLE RODAPE -->
+
+<!-- ANALYTICS -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40375752-1']);
+  _gaq.push(['_setDomainName', 'brasa.art.br']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- ANALYTICS -->
 
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed">
+<div id="page" class="single-page">
 	<header id="branding" role="banner">
 			<hgroup>
 			
@@ -96,18 +114,7 @@ $(document).ready(function(){
 				if ( ! empty( $header_image ) ) :
 			?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<?php
-					// The header image
-					// Check if this is a post or page, if it has a thumbnail, and if it's a big one
-					if ( is_singular() &&
-							has_post_thumbnail( $post->ID ) &&
-							( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( HEADER_IMAGE_WIDTH, HEADER_IMAGE_WIDTH ) ) ) &&
-							$image[1] >= HEADER_IMAGE_WIDTH ) :
-						// Houston, we have a new header image!
-						echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
-					else : ?>
 					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
-				<?php endif; // end check for featured image or standard header ?>
 			</a>
 			<?php endif; // end check for removed header image ?>	
 		

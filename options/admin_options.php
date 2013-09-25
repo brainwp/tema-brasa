@@ -19,35 +19,6 @@ $options = array (
 
 array( "name" => $themename." Options",
 	"type" => "title"),
-	
-/** Início Toggle Redes Sociais */ 
- 
- array( "name" => "Redes Sociais",
-	"type" => "section"),
-array( "type" => "open"),
- 
-array( "name" => "Facebook",
-	"desc" => "Adicione a URL do Facebook",
-	"id" => $shortname."_url_face",
-	"type" => "text",
-	"std" => ""),
-	
-array( "name" => "Twitter",
-	"desc" => "Adicione a URL do Twitter",
-	"id" => $shortname."_url_twitter",
-	"type" => "text",
-	"std" => ""),
-
-array( "name" => "YouTube",
-	"desc" => "Adicione a URL do YouTube",
-	"id" => $shortname."_url_youtube",
-	"type" => "text",
-	"std" => ""),	
-	
-array( "type" => "close"),
- 
-/** Fim Toggle Redes Sociais */
-
 
 /** Início Toggle Informações do Rodapé */ 
  
@@ -56,8 +27,8 @@ array( "name" => "Informa&ccedil;&otilde;es do Rodap&eacute;",
 array( "type" => "open"),
  
 
-array( "name" => "Licenca",
-	"desc" => "Adicione a Licenca da empresa",
+array( "name" => "Licen&ccedil;a",
+	"desc" => "Adicione a Licen&ccedil;a de uso do conte&uacute;do do site",
 	"id" => $shortname."_licenca",
 	"type" => "text",
 	"std" => ""),
@@ -149,7 +120,6 @@ case "close":
 case "title":
 ?>
 <p>Use <?php echo $themename;?> para configurar algumas partes do seu tema.</p>
-
  
 <?php break;
  
@@ -244,10 +214,11 @@ $i++;
 <input type="hidden" name="action" value="save" />
 </form>
 <form method="post">
-<p class="submit">
-<input name="reset" type="submit" value="Limpar Dados" />
-<input type="hidden" name="action" value="reset" />
-</p>
+    <p class="submit">Se precisar deletar todos os dados, 
+    <input class="reset" name="reset" type="submit" value="clique aqui" />
+    <input type="hidden" name="action" value="reset" />
+    .
+    </p>
 </form>
 </div> 
  

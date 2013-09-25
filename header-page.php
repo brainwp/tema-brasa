@@ -70,20 +70,6 @@
 <!-- COISAS ESPECIFICAS DO BRASILICO -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
-<!-- CHAMANDO AUTO TROCA DO SLIDER SHOWCASE -->
-<script type="text/javascript" charset="utf-8">
-  jQuery(document).ready(function(){
-    var change_every = 5; // The number of seconds that the slider will auto-advance in
-    var current = 1;
-    function auto_advance(){
-      if(current == -1) return false;
-      jQuery('.feature-slider a').eq(current % jQuery('.feature-slider a').length).trigger('click', [true]);
-      current++;
-    };
-    setInterval(function(){auto_advance()}, change_every * 1000);
-  });
-</script>
-
 <!-- TOGGLE RODAPE -->
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function(){
@@ -116,7 +102,7 @@ $(document).ready(function(){
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="home">
+<div id="page" class="hfeed">
 	<header id="branding" role="banner">
 			<hgroup>
 			
@@ -149,6 +135,15 @@ $(document).ready(function(){
 				<?php // get_search_form(); ?>
 			<?php endif; ?>
 	</header><!-- #branding -->
+	
+		<nav id="access" role="navigation">
+				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
+				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
+				<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
+				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</nav><!-- #access -->
 
 
 	<div id="main">

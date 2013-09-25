@@ -167,10 +167,9 @@ get_header('home'); ?>
 				<?php endif; // End check for published posts. ?>
 				<?php endif; // End check for sticky posts. ?>
 
-			</div><!-- #content -->
-			
-				<section class="botoes-home">
-					<h1 class="portfolio-heading">Portfolio</h1>
+				
+								<section class="botoes-home">
+					<a class="PortfolioAnchor" name="PortfolioAnchor"><h1 class="portfolio-heading">Portfolio</h1></a>
 				
 				<a href="http://web.brasa.art.br">				
 				<div id="botao-web">
@@ -193,6 +192,8 @@ get_header('home'); ?>
 				
 				</section><!-- .botoes-home -->
 			
+				
+			</div><!-- #content -->
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>
