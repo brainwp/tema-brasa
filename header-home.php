@@ -67,7 +67,7 @@
 	wp_head();
 ?>
 
-<!-- COISAS ESPECIFICAS DO BRASILICO -->
+<!-- COISAS ESPECIFICAS DO BRASA THEME -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
 <!-- CHAMANDO AUTO TROCA DO SLIDER SHOWCASE -->
