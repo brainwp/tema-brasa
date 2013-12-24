@@ -159,7 +159,7 @@ get_header('home'); ?>
 							else
 								$class = '';
 				    	?>
-						<li><a href="#featured-post-<?php echo $counter_slider; ?>" title="<?php echo esc_attr( sprintf( __( 'Featuring: %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ) ); ?>" <?php echo $class; ?>></a></li>
+						<li><a href="#featured-post-<?php echo $counter_slider; ?>" title="<?php echo esc_attr( sprintf( __( 'Featuring: %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ) ); ?>" <?php echo $class; ?>><?php echo $arrow_slider; ?></a></li>
 					<?php endwhile;	?>
 					</ul>
 				</nav>

@@ -323,7 +323,7 @@ text-decoration: none;
 }
 
 #botao-web {
-	background:#eebc0e;
+	background:#f2cd3e;
     float: left;
     margin: 0 2% 2% 0;
     height: 260px;
@@ -332,7 +332,7 @@ text-decoration: none;
 }
 
 #botao-web:hover {
-background: url("images/text_laranja_pq.jpg") repeat scroll 0 0 #f2cd3e;
+background: url("images/text_laranja_pq.jpg") repeat scroll 0 0 #eebc0e;
 }
 
 #botao-design {
