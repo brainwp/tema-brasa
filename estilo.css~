@@ -647,7 +647,6 @@ margin-bottom: 5%;
     min-height: 300px;
     display: block;
     position:relative;
-	width: 100%;
 }
 
 #content-rodape {
