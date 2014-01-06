@@ -1,0 +1,9 @@
+error_log
+
+.vagrant
+Vagrantfile
+
+*.swp
+*.swo
+*.zip
+*~
