@@ -617,6 +617,10 @@ margin-bottom: 5%;
 	font-size: 1.1em;
 }
 
+#third.widget-area a {
+	color:#7ED2DA;
+}
+
 #toggle-footer{
     height: 35px;
     background: none repeat scroll 0 0 transparent;
@@ -647,6 +651,7 @@ margin-bottom: 5%;
     min-height: 300px;
     display: block;
     position:relative;
+	width: 100%;
 }
 
 #content-rodape {
