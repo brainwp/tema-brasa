@@ -72,15 +72,14 @@
 
 <!-- TOGGLE RODAPE -->
 <script type="text/javascript" charset="utf-8">
-$(document).ready(function(){
-    $(".slide-btn").click(function(){
-        $("#panel").slideToggle("slow");
-        $(this).toggleClass("active");
-        return false;
-    });
+jQuery(function(){
+	jQuery(".slide-btn").click(function(){
+		jQuery("#panel").slideToggle("slow");
+		jQuery(this).toggleClass("active");
+		return false;
+	});
 });
 </script>
-<!-- TOGGLE RODAPE -->
 
 <!-- ANALYTICS -->
 <script type="text/javascript">
@@ -97,7 +96,6 @@ $(document).ready(function(){
   })();
 
 </script>
-<!-- ANALYTICS -->
 
 </head>
 

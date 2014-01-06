@@ -53,7 +53,7 @@
 	    <div id="licenca-footer"><?php echo stripslashes (get_option('mo_licenca')); ?><a class="logo-cc" href="http://creativecommons.org/licenses/by-nc-sa/3.0/br/" target="_blank" alt="Sob uma licença Creative Commons">cc</a></div>
 		</div>
 		<div id="essencial">
-			<div id="logo-wordpress"><a href="http://br.wordpress.org" target="_blank" class="a-logo-wordpress"></a></div>
+			<div id="logo-wordpress"><a href="http://brasa.art.br/sobre-wordpress/" target="_self" class="a-logo-wordpress"></a></div>
 			<div id="frase-footer"><?php echo stripslashes (get_option('mo_frase')); ?></div>
 		</div>
 			</div><!-- #content-footer -->

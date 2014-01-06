@@ -67,7 +67,7 @@
 	wp_head();
 ?>
 
-<!-- COISAS ESPECIFICAS DO BRASA THEME -->
+<!-- FONTES GOOGLE DO BRASA THEME -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
 <!-- CHAMANDO AUTO TROCA DO SLIDER SHOWCASE -->
@@ -86,15 +86,14 @@
 
 <!-- TOGGLE RODAPE -->
 <script type="text/javascript" charset="utf-8">
-$(document).ready(function(){
-    $(".slide-btn").click(function(){
-        $("#panel").slideToggle("slow");
-        $(this).toggleClass("active");
-        return false;
-    });
+jQuery(function(){
+	jQuery(".slide-btn").click(function(){
+		jQuery("#panel").slideToggle("slow");
+		jQuery(this).toggleClass("active");
+		return false;
+	});
 });
 </script>
-<!-- TOGGLE RODAPE -->
 
 <!-- ANALYTICS -->
 <script type="text/javascript">
@@ -111,7 +110,6 @@ $(document).ready(function(){
   })();
 
 </script>
-<!-- ANALYTICS -->
 
 </head>
 

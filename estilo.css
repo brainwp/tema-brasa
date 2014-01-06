@@ -495,7 +495,7 @@ display: none;
 
 .fb-like {
     float: right;
-    margin-right: -4%;
+    margin-right: -3%;
     margin-top: 0.7em;
 }
 
@@ -543,49 +543,26 @@ display: none;
 
 /* FOOTER */
 
-.widget_twitter {
-margin: 0;
-float: left;
-padding-top: 1em;
+.widget_twitter_timeline {
+	margin: 0;
+	float: left;
+	padding-top: 1em;
 }
 
-.widget_twitter ul{
-
-    background: none repeat scroll 0 0 #555555;
-    border-radius: 10px 10px 10px 10px;
-    padding: 0 5% 2%;
-    color: #CCCCCC;
-    font-size: 0.9em;
-    margin: 3% 0;
-    padding: 3%;
-}
-
-.widget_twitter ul li{
-    padding: 0 2%;
-}
-
-.widget_twitter  h3.widget-title {
-
-    border-bottom: 1px solid #CCCCCC;
-    margin: 0;
-    padding: 4% 0;
-
-}
-
-.widget_twitter h3.widget-title a{
+.widget_twitter_timeline h3.widget-title{
 	background: url("images/twitter_icon.png") no-repeat scroll -2px top transparent;
-	padding-left: 62px;
-	padding-bottom: 12px;
-	padding-top: 12px;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0;	
+	padding: 3% 0 1% 62px;
 	color: #FFF;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 1.5em;
     text-transform: uppercase;
-	height: 55px;
+	height: 50px;
 }
 
-.widget_twitter a {
+.widget_twitter_timeline a {
 
 	color: #7ED2DA;
 
@@ -661,18 +638,19 @@ display: none;
     margin: 0 auto;
     display: block;
     color: #fff;
-    background:transparent url('images/btn-abrir-v2.png') no-repeat;
+    background:transparent url('images/btn-fechar-v2.png') no-repeat;
+
 }
 
 .slide-btn.active {
-    background:transparent url('images/btn-fechar-v2.png') no-repeat;
+    background:transparent url('images/btn-abrir-v2.png') no-repeat;
 }
 
 
 #panel {
     background: none repeat scroll 0 0 transparent;
     min-height: 300px;
-    display: none;
+    display: block;
     position:relative;
 }
 
