@@ -38,10 +38,9 @@
 
 <div id="panel">
 				<?php
-					/* A sidebar in the footer? Yep. You can can customize
+					/* A sidebar in the footer.
 					 * your footer with three columns of widgets.
 					 */				
-					if ( ! is_404() )
 						get_sidebar( 'footer' );				
 				?>
 
