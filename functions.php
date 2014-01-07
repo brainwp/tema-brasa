@@ -21,7 +21,7 @@ add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
 
 // Personaliza o rodapé do admin
 function custom_admin_footer() {
-        echo 'Desenvolvido com <a href=http://wordpress.org/>WordPress</a> por <a href=http://www.brasa.art.br>BrasaDesign e Tecnologia</a>.';
+        echo 'Desenvolvido com <a href=http://wordpress.org/>WordPress</a> por <a href=http://www.brasa.art.br>Brasa Design e Tecnologia</a>.';
 }
 add_filter('admin_footer_text', 'custom_admin_footer');
 
@@ -80,6 +80,23 @@ wp_enqueue_script( 'mobile-nav', get_stylesheet_directory_uri() . '/js/mobile_na
 }
 
 add_action('wp_enqueue_scripts', 'my_scripts_method');
+
+// FILTRO PARA TROCAR CERTAS PALAVRAS POR LINKS
+
+function replace_wordswithlinks($text){
+	$replace = array(
+	// 'WORD TO REPLACE' => 'REPLACE WORD WITH THIS'
+	'WordPress' => '<a href="http://brasa.art.br/sobre-wordpress/">WordPress</a>' ,
+	'wordpress' => '<a href="http://brasa.art.br/sobre-wordpress/">WordPress</a>' ,
+	'wp' => '<a href="http://brasa.art.br/sobre-wordpress/">wp</a>' ,
+	'WP' => '<a href="http://brasa.art.br/sobre-wordpress/">WP</a>'
+	);
+	$text = str_replace(array_keys($replace), $replace, $text);
+	return $text;
+}
+
+add_filter('the_content', 'replace_wordswithlinks');
+add_filter('the_excerpt', 'replace_wordswithlinks');
 
 
 
