@@ -86,10 +86,7 @@ add_action('wp_enqueue_scripts', 'my_scripts_method');
 function replace_wordswithlinks($text){
 	$replace = array(
 	// 'WORD TO REPLACE' => 'REPLACE WORD WITH THIS'
-	'WordPress' => '<a href="http://brasa.art.br/sobre-wordpress/">WordPress</a>' ,
-	'wordpress' => '<a href="http://brasa.art.br/sobre-wordpress/">WordPress</a>' ,
-	'wp' => '<a href="http://brasa.art.br/sobre-wordpress/">wp</a>' ,
-	'WP' => '<a href="http://brasa.art.br/sobre-wordpress/">WP</a>'
+	'WordPress' => '<a href="http://brasa.art.br/sobre-wordpress/">WordPress</a>'
 	);
 	$text = str_replace(array_keys($replace), $replace, $text);
 	return $text;
