@@ -329,6 +329,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Source Sans Pro', Arial, Geneva, sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
+	line-height: 1.2em;
 }
 hr {
 	background-color: #ccc;
@@ -2184,6 +2185,12 @@ p.comment-form-comment {
 /* hide the default responsive menu and menu button */
 h3.menu-toggle {display: none}
 .main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {display: none;}
+
+
+.zilla-toggle-title {
+    
+
+}
  
 /* new responsive selectnav css */
 .selectnav { display: none; }
