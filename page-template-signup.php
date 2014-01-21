@@ -402,4 +402,4 @@ if ( $active_signup == 'none' ) {
 </div>
 <?php do_action( 'after_signup_form' ); ?>
  
-<?php get_footer(); ?>
+<?php get_footer('simples'); ?>

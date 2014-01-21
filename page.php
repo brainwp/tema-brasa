@@ -28,4 +28,4 @@ get_header('page'); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer('simples'); ?>
