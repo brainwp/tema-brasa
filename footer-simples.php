@@ -18,9 +18,6 @@
 <footer id="colophon" role="contentinfo">
 
 	<div id="content-rodape">
-		<div class="fb-like" data-href="http://brasa.art.br" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false">
-					<iframe src="//www.facebook.com/plugins/like.php?locale=pt_BR&amp;href=http%3A%2F%2Ffacebook.com/BrasaDesign%2F&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;"></iframe>
-		</div>	
 
     	<hr />
 		<div id="dados-footer">
