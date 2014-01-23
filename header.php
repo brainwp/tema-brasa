@@ -71,7 +71,7 @@
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
 <!-- TOGGLE RODAPE -->
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
 jQuery(function(){
 	jQuery(".slide-btn").click(function(){
 		jQuery("#panel").slideToggle("slow");
@@ -102,24 +102,21 @@ jQuery(function(){
 <body <?php body_class(); ?>>
 <div id="page" class="single-page">
 	<header id="branding" role="banner">
-			<hgroup>
 			
-		<div id="logo"><a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>">
+		<div id="logo">
+			<a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>">
 	
 			<?php
 				// Check to see if the header image has been removed
 				$header_image = get_header_image();
 				if ( ! empty( $header_image ) ) :
 			?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
-			</a>
+				<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
 			<?php endif; // end check for removed header image ?>	
 		
-		</a></div><!--logo end-->
+			</a>
+		</div><!--logo end-->
 	
-			</hgroup>
-
 			<?php
 				// Has the text been hidden?
 				if ( 'blank' == get_header_textcolor() ) :

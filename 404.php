@@ -29,7 +29,7 @@ get_header(); ?>
 									
 						<section class="botoes-home">					
 						
-					<a class="PortfolioAnchor" name="PortfolioAnchor"><h1 class="portfolio-heading">Portfolio</h1></a>
+					<a class="PortfolioAnchor" href="#PortfolioAnchor"><h1 class="portfolio-heading">Portfolio</h1></a>
 				
 				<a href="http://web.brasa.art.br">				
 				<div id="botao-web">
