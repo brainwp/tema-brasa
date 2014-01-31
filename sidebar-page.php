@@ -5,7 +5,7 @@
  * Description: A Page Template that adds a sidebar to pages.
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
+ * @subpackage Tema Brasa
  * @since Twenty Eleven 1.0
  */
 

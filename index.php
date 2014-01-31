@@ -9,7 +9,7 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
+ * @subpackage Tema Brasa
  */
 
 get_header(); ?>
@@ -19,16 +19,16 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php twentytwelve_content_nav( 'nav-above' ); ?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'content', get_post_format() ); ?>
 
-				<?php endwhile; ?>
-
-				<?php twentytwelve_content_nav( 'nav-below' ); ?>
+					<?php endwhile; ?>
+	
+			<nav id="nav-below">
+				<?php posts_nav_link(); ?>
+			</nav>
 
 			<?php else : ?>
 

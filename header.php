@@ -43,6 +43,17 @@
 <!-- FONTES GOOGLE DO BRASA THEME -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
+<!-- TOGGLE RODAPE -->
+<script type="text/javascript">
+jQuery(function(){
+	jQuery(".slide-btn").click(function(){
+		jQuery("#panel").slideToggle("slow");
+		jQuery(this).toggleClass("active");
+		return false;
+	});
+});
+</script>
+
 <!-- ANALYTICS -->
 <script type="text/javascript">
 

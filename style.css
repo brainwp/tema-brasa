@@ -73,20 +73,27 @@ body {
 #access div {
 	margin: 0 7.6%;
 }
+
 #primary {
-	float: left;
-	margin: 0 -26.4% 0 0;
+	float: right;
+	margin: 0 0 0 -33%;
 	width: 100%;
 }
+
 #content {
-	margin: 0 34% 0 7.6%;
-	width: 58.4%;
+ margin: 5% 3% 0 38%;
+    width: 56%;
 }
 
 #secondary {
-	float: right;
-	margin-right: 7.6%;
-	width: 18.8%;
+	background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+	margin: 5% 0 3% 3%;
+    padding: 3%;
+    width: 24%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 }
 
 /* Singular */
@@ -168,26 +175,6 @@ body {
 	margin-right: auto;
 }
 
-/* Right Content */
-.left-sidebar #primary {
-	float: right;
-	margin: 0 0 0 -33%;
-	width: 100%;
-}
-.left-sidebar #content {
- margin: 5% 3% 0 38%;
-    width: 56%;
-}
-.left-sidebar #secondary {
-	background: none repeat scroll 0 0 #FFFFFF;
-    float: left;
-	margin: 5% 0 3% 3%;
-    padding: 3%;
-    width: 24%;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-}
 
 /* One column */
 .one-column #page {
@@ -625,6 +612,7 @@ a:hover {
 .entry-title a {
 	color: #222;
 	text-decoration: none;
+	margin-bottom: 0;
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -967,7 +955,7 @@ and remove the padding rules below.
 	line-height: 2.6em;
 	position: absolute;
 	text-transform: uppercase;
-	top: -5px;
+	top: -15px;
 }
 .entry-header hgroup .entry-title {
 	padding-top: 15px;
@@ -2194,22 +2182,23 @@ select.selectnav {margin:0 auto;} /* centers select */
 
 /* GERAL  */
 body {
-	background: url("images/bg-ao-meio-final.jpg") #f3f1ee repeat scroll center top;
+
+	background: url("images/bg-ao-meio-final.jpg") #F3F1EE repeat fixed center top;
 	 margin: 0;
 	 padding: 0;
 }
 
 body.page {
 
-    background: url("images/bg-2000-1250.jpg") repeat scroll center top #F3F1EE;
+    background: url("images/bg-2000-1250.jpg") #F3F1EE repeat fixed center top;
     margin: 0;
     padding: 0;
 
 }
 
-body.home {
+body.page-template-showcase-php {
 
-	background: url("images/bg-ao-meio-final.jpg") #f3f1ee repeat scroll center top;
+	background: url("images/bg-ao-meio-final.jpg") #F3F1EE repeat fixed center top;
 	 margin: 0;
 	 padding: 0;
 

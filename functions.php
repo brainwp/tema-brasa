@@ -8,7 +8,7 @@ add_post_type_support( 'page', 'excerpt' );
 
 
 	// Make Tema Brasa available for translation. Translations can be added to the /languages/ directory.
-	//load_theme_textdomain( 'tema_brasa', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'tema_brasa', get_template_directory() . '/languages' );
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();

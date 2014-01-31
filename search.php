@@ -30,9 +30,9 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
-
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
-
+			<nav id="nav-below">
+				<?php posts_nav_link(); ?>
+			</nav>
 			<?php else : ?>
 
 				<article id="post-0" class="post no-results not-found">
