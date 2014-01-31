@@ -2784,7 +2784,7 @@ display: none;
     padding: 0 0 1.6% 45px;
 }
 
-.widget_rss h3.widget-title a{
+.widget_rss h3.widget-titlwidgete a{
 	color: #7ED2DA;
     font-weight: bold;
     letter-spacing: 0;
@@ -2795,12 +2795,12 @@ display: none;
 }
 
 
-#first.widget-area a {
+#supplementary .first  a {
 	color:#7ED2DA;
 	font-size: 1.1em;
 }
 
-#third.widget-area a {
+#supplementary .last a {
 	color:#7ED2DA;
 }
 
