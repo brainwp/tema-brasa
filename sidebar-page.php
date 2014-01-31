@@ -1,18 +1,15 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Sidebar Template
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * Description: A Page Template that adds a sidebar to pages.
  *
  * @package WordPress
- * @subpackage Tema Brasa
+ * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
 
-get_header('page'); ?>
+get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
@@ -28,4 +25,5 @@ get_header('page'); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_footer('simples'); ?>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

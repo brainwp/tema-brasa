@@ -5,7 +5,7 @@
  * Contains the closing of the id=main div and all content after
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
+ * @subpackage Tema Brasa
  * @since Twenty Eleven 1.0
  */
 ?>
