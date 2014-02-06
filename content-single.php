@@ -14,7 +14,7 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php twentyeleven_posted_on(); ?>
+			<?php the_time('j \d\e F \d\e Y'); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
