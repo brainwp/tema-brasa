@@ -651,11 +651,11 @@ a:hover {
 }
 .entry-content h3,
 .comment-content h3 {
-	font-size: 140%;
-	font-weight: bold;
-	line-height: 2.6em;
-	text-transform: uppercase;
-	margin: 0 0 0.125em;
+    font-size: 140%;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0 0 0.625em;
+    text-transform: uppercase;
 }
 
 .titulos-laranja {
@@ -1463,6 +1463,10 @@ section.feature-image.large img {
 .feature-slider a.active {
 	background: #b843a6;
 	cursor: default;
+}
+
+.featured-posts .entry-summary p {
+	font-size: 1.8em !important;
 }
 
 /* Recent Posts */
@@ -2454,7 +2458,7 @@ a.link_youtube:hover {
    background: none repeat scroll 0 0 #93aa38 !important;
 }
 
-#menu-item-330 a{
+#menu-item-729 a{
    background: none repeat scroll 0 0 #7ed2da !important;
 }
 
