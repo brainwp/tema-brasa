@@ -489,7 +489,7 @@ a:hover {
 
 #branding {
 	position: relative;
-	z-index: 9999;
+	z-index: 999;
 }
 
 #branding img {
@@ -2952,6 +2952,31 @@ a.button{	color: #fff;	background: #009933;	  padding: 4px 12px;	  -moz-border-r
     outline: 1px solid #CCCCCC;
 	width: 70px;
 	height: 70px;
+}
+
+
+.white-popup {
+    background: none repeat scroll 0 0 #0C586E;
+    margin: 20px auto;
+    max-width: 720px;
+    padding: 30px;
+    position: relative;
+    width: auto;
+}
+
+
+a.zilla-button.blue {
+    background: none repeat scroll 0 0 #2070A1;
+    border: medium none #0D507A !important;
+}
+a.zilla-button.medium {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px 16px !important;
+}
+
+.page-template-showcase-php a.zilla-button, a.zilla-button:visited {
+    margin: 0 0.1em 0 0 !important;
 }
 
 

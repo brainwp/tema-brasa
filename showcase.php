@@ -167,8 +167,13 @@ get_header('home'); ?>
 				<?php endif; // End check for published posts. ?>
 				<?php endif; // End check for sticky posts. ?>
 
-				
-								<section class="botoes-home">
+				<div id="separador"></div>
+
+				<p style="text-align: center;">
+					<a class="zilla-button medium blue round open-popup-link" href="#download-popup">Veja nosso vídeo institucional</a>
+				</p>		
+								
+				<section class="botoes-home">
 					<a class="PortfolioAnchor" href="#PortfolioAnchor"><h1 class="portfolio-heading">Portfólio</h1></a>
 				
 				<a href="http://web.brasa.art.br">				
@@ -191,9 +196,15 @@ get_header('home'); ?>
 				</a>
 				
 				</section><!-- .botoes-home -->
-			
-				
+
 			</div><!-- #content -->
 		</div><!-- #primary -->
+
+	<div id="download-popup" class="white-popup mfp-hide">
+								
+		<?php $page = get_post( $id = 1201 );
+			echo apply_filters( 'the_content', $page->post_content);
+		?>
+	</div>
 
 <?php get_footer(); ?>

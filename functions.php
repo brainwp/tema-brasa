@@ -132,6 +132,9 @@ wp_deregister_script( 'jquery' );
 wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
 wp_enqueue_script('jquery');
 wp_enqueue_script( 'mobile-nav', get_stylesheet_directory_uri() . '/js/mobile_nav.js', array('jquery'));
+// Chamando o LigthBox Magnific!
+wp_enqueue_script( 'jquery.magnific-popup', get_stylesheet_directory_uri() . '/js/jquery.magnific-popup.js', array('jquery'), '', true );
+wp_enqueue_style( 'magnific-popup', get_stylesheet_directory_uri() . '/js/magnific-popup.css' );
 }
 
 add_action('wp_enqueue_scripts', 'my_scripts_method');
