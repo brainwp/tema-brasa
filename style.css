@@ -1381,7 +1381,7 @@ section.feature-image.large img {
 /* Featured Slider */
 .featured-posts {
 	display: block;
-	height: 300px;
+	height: 285px;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -1392,7 +1392,7 @@ section.feature-image.large img {
 }
 .featured-posts section.featured-post {
 	background: #C7D6DD;
-	height: 300px;
+	height: 285px;
 	left: 0;
 	margin: 0;
 	position: absolute;
