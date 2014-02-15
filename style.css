@@ -1391,7 +1391,7 @@ section.feature-image.large img {
 	padding-left: 8%;
 }
 .featured-posts section.featured-post {
-	background: #fff;
+	background: #C7D6DD;
 	height: 300px;
 	left: 0;
 	margin: 0;
@@ -1422,20 +1422,20 @@ section.feature-image.large img {
 .featured-post .feature-text:after,
 .featured-post .feature-image.small:after {
 	content: ' ';
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	background: -moz-linear-gradient(top, rgba(199, 214, 221,0) 0%, rgba(199, 214, 221,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(199, 214, 221,0)), color-stop(100%,rgba(199, 214, 221,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(199, 214, 221,0) 0%,rgba(199, 214, 221,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(199, 214, 221,0) 0%,rgba(199, 214, 221,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(199, 214, 221,0) 0%,rgba(199, 214, 221,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00C7D6DD', endColorstr='#C7D6DD',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(199, 214, 221,0) 0%,rgba(199, 214, 221,1) 100%); /* W3C */
 	width: 100%;
 	height: 45px;
 	position: absolute;
 	top: 230px;
 }
 .featured-post .feature-image.small:after {
-	top: 250px;
+	top: 255px;
 }
 #content .feature-slider {
 	float: left;
@@ -1465,8 +1465,21 @@ section.feature-image.large img {
 	cursor: default;
 }
 
+
+.featured-posts {
+	background: none repeat scroll 0 0 #377486 !important;
+}
+
 .featured-posts .entry-summary p {
 	font-size: 1.8em !important;
+}
+
+.featured-posts .entry-title, .featured-posts .entry-title a {
+
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #0C586E;
+
 }
 
 /* Recent Posts */
