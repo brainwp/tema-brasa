@@ -1474,6 +1474,15 @@ section.feature-image.large img {
 	font-size: 1.8em !important;
 }
 
+.featured-posts .entry-summary a {
+	color: #666;
+	text-decoration: none;
+}
+
+.featured-posts .entry-summary a:hover {
+	color: #333;
+}
+
 .featured-posts .entry-title, .featured-posts .entry-title a {
 
 	padding-top: 0;

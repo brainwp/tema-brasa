@@ -15,7 +15,7 @@
  */
 
 // Enqueue showcase script for the slider
-wp_enqueue_script( 'twentyeleven-showcase', get_template_directory_uri() . '/js/showcase.js', array( 'jquery' ), '2011-04-28' );
+wp_enqueue_script( 'twentyeleven-showcase', get_stylesheet_directory_uri() . '/js/showcase.js', array( 'jquery' ), '2011-04-28' );
 
 get_header('home'); ?>
 
@@ -132,7 +132,8 @@ get_header('home'); ?>
 								<?php
 							}
 						?>
-						<?php get_template_part( 'content', 'featured' ); ?>
+							<?php get_template_part( 'content', 'featured' ); ?>
+
 					</section>
 				<?php endwhile;	?>
 
@@ -176,6 +177,7 @@ get_header('home'); ?>
 				<section class="botoes-home">
 					<a class="PortfolioAnchor" href="#PortfolioAnchor"><h1 class="portfolio-heading">Portfólio</h1></a>
 				
+Abx
 				<a href="http://web.brasa.art.br">				
 				<div id="botao-web">
 				<span class="link-web">Web</span>
