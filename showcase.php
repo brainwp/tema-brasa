@@ -176,8 +176,7 @@ get_header('home'); ?>
 								
 				<section class="botoes-home">
 					<a class="PortfolioAnchor" href="#PortfolioAnchor"><h1 class="portfolio-heading">Portfólio</h1></a>
-				
-Abx
+
 				<a href="http://web.brasa.art.br">				
 				<div id="botao-web">
 				<span class="link-web">Web</span>
