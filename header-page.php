@@ -60,8 +60,21 @@
 	wp_head();
 ?>
 
-<!-- COISAS ESPECIFICAS DO BRASILICO -->
+<!-- FONTES GOOGLE DO BRASA THEME -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+<!-- Chamar e rodar o magnificPopup -->
+<script type="text/javascript">
+jQuery(function() {
+       jQuery('.open-popup-link').magnificPopup({
+         type:'inline',
+         midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+       });
+});
+       jQuery("document").ready(function() {
+       jQuery('.open-popup-link').trigger('click');
+		});
+</script>
 
 <!-- ANALYTICS -->
 <script type="text/javascript">

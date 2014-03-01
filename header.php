@@ -74,6 +74,20 @@ jQuery(function(){
 });
 </script>
 
+<!-- Chamar e rodar o magnificPopup -->
+<script type="text/javascript">
+jQuery(function() {
+       jQuery('.open-popup-link').magnificPopup({
+         type:'inline',
+         midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+       });
+});
+       jQuery("document").ready(function() {
+       jQuery('.open-popup-link').trigger('click');
+		});
+</script>
+
+
 <!-- ANALYTICS -->
 <script type="text/javascript">
 

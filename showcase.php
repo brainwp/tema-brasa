@@ -47,6 +47,36 @@ get_header('home'); ?>
 		<div id="primary" class="showcase">
 			<div id="content" role="main">
 
+			<iframe clas="vimeo-home" src="//player.vimeo.com/video/84648861?title=0&amp;byline=0&amp;portrait=0&amp;color=b843a6" width="845" height="475" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	
+			<div id="separador"></div>	
+								
+				<section class="botoes-home"><p></p>
+					<a class="PortfolioAnchor" href="#PortfolioAnchor"><h1 class="portfolio-heading">Portfólio</h1></a>
+
+				<a href="http://web.brasa.art.br">				
+				<div id="botao-web">
+				<span class="link-web">Web</span>
+				</div>
+				</a>
+	
+				<a href="http://design.brasa.art.br">
+				<div id="botao-design">
+				<span class="link-design">Design</span>
+				</div>
+				</a>
+	
+				
+				<a href="http://cultura.brasa.art.br">			
+				<div id="botao-cultura">
+				<span class="link-cultura">Cultura</span>
+				</div>
+				</a>
+				
+				</section><!-- .botoes-home -->
+
+				<div id="separador"></div>				
+				<h1 class="portfolio-heading">Destaques</h1>
 				<?php
 					/**
 					 * Begin the featured posts section.
@@ -144,7 +174,7 @@ get_header('home'); ?>
 				</div><!-- .featured-posts -->
 				<nav class="feature-slider">
 					<ul>	
-<?php
+				<?php
 
 						// Reset the counter so that we end up with matching elements
 				    	$counter_slider = 0;
@@ -168,35 +198,6 @@ get_header('home'); ?>
 				<?php endif; // End check for published posts. ?>
 				<?php endif; // End check for sticky posts. ?>
 
-				<div id="separador"></div>
-
-				<p style="text-align: center;">
-					<a class="zilla-button medium blue round open-popup-link" href="#download-popup">Veja nosso vídeo institucional</a>
-				</p>		
-								
-				<section class="botoes-home">
-					<a class="PortfolioAnchor" href="#PortfolioAnchor"><h1 class="portfolio-heading">Portfólio</h1></a>
-
-				<a href="http://web.brasa.art.br">				
-				<div id="botao-web">
-				<span class="link-web">Web</span>
-				</div>
-				</a>
-	
-				<a href="http://design.brasa.art.br">
-				<div id="botao-design">
-				<span class="link-design">Design</span>
-				</div>
-				</a>
-	
-				
-				<a href="http://cultura.brasa.art.br">			
-				<div id="botao-cultura">
-				<span class="link-cultura">Cultura</span>
-				</div>
-				</a>
-				
-				</section><!-- .botoes-home -->
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
