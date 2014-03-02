@@ -2672,8 +2672,6 @@ color: #FFF;
     width: 100%;
     height: 100%;
 }
-- See more at: http://avexdesigns.com/responsive-youtube-embed/#sthash.bra4vbk3.dpuf
-
 
 /* =Navigation
 -------------------------------------------------------------- */
@@ -2911,12 +2909,11 @@ display: none;
 	margin-left: 3px; 
 }
 
-
 #dados-footer {
     float: left;
     width: 48%;
 	font-size: 1em;
-   margin: 0 0 3% 2%;
+    margin: 0 0 3% 2%;
 }
 
 #licenca-footer {
@@ -2928,10 +2925,8 @@ display: none;
 }
 
 #essencial {
-
 	float: left;
     width: 48%;
-
 }
 
 #frase-footer {
@@ -2962,15 +2957,11 @@ a.button{	color: #fff;	background: #009933;	  padding: 4px 12px;	  -moz-border-r
 	float: left;
 }
 
-
-
 .quick-flickr-item:hover {
 	opacity:0.99;
 	-moz-opacity: 0.99;
 	filter: alpha(opacity=99);
 }
-
-
 
 
 .quick-flickr-item img {
@@ -2981,7 +2972,6 @@ a.button{	color: #fff;	background: #009933;	  padding: 4px 12px;	  -moz-border-r
 	height: 70px;
 }
 
-
 .white-popup {
     background: none repeat scroll 0 0 #0C586E;
     margin: 20px auto;
@@ -2990,7 +2980,6 @@ a.button{	color: #fff;	background: #009933;	  padding: 4px 12px;	  -moz-border-r
     position: relative;
     width: auto;
 }
-
 
 a.zilla-button.blue {
     background: none repeat scroll 0 0 #2070A1;
@@ -3005,7 +2994,6 @@ a.zilla-button.medium {
 .page-template-showcase-php a.zilla-button, a.zilla-button:visited {
     margin: 0 0.1em 0 0 !important;
 }
-
 
 /* =ESTRUTURA RESPONSIVA
 As informações são acumulativas, o que vocês fez para max. 600px não precisa ser feito de novo para max. 450px.
@@ -3066,6 +3054,7 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	.one-column article.feature-image.small .entry-summary {
 		height: auto;
 	}
+
 	article.feature-image.small .entry-summary p a {
 		left: 0;
 		padding-left: 20px;
@@ -3073,10 +3062,9 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 		width: auto;
 	}
 	
-	
-		article.feature-image.large .entry-title a {
+	article.feature-image.large .entry-title a {
 		font-size: 1.9em;
-		}
+	}
 
 	/* Remove the margin on singular articles */
 	.singular .entry-header,
@@ -3128,6 +3116,12 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	.error404 #main .widget {
 		float: none;
 		margin-right: 0;
+		width: auto;
+	}
+	#supplementary .front-widgets {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 5%;
 		width: auto;
 	}
 
