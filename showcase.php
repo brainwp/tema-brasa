@@ -46,9 +46,9 @@ get_header('home'); ?>
 
 		<div id="primary" class="showcase">
 			<div id="content" role="main">
-
+		<div class="vimeo-container">
 			<iframe clas="vimeo-home" src="//player.vimeo.com/video/84648861?title=0&amp;byline=0&amp;portrait=0&amp;color=b843a6" width="845" height="475" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	
+		</div>
 			<div id="separador"></div>	
 								
 				<section class="botoes-home"><p></p>
