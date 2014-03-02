@@ -2995,6 +2995,18 @@ a.zilla-button.medium {
     margin: 0 0.1em 0 0 !important;
 }
 
+
+/*
+Mobile Navigation for the WordPress twentyeleven theme.
+*/
+
+/* #Menu
+================================================== */
+nav .menu select {
+	display: none;	
+}
+
+
 /* =ESTRUTURA RESPONSIVA
 As informações são acumulativas, o que vocês fez para max. 600px não precisa ser feito de novo para max. 450px.
 ----------------------------------------------- */
@@ -3159,7 +3171,7 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	
 	.featured-posts {
     height: 175px;
-}
+	}
 
 	.singular .entry-title {
 		font-size: 28px;
@@ -3244,91 +3256,91 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
     height: 125px;
     padding: 0;
     width: 100%;
-}
+	}
 
-#botao-design {
+	#botao-design {
 
-    float: none;
-    margin: 0 2% 3% 0;
-    height: 125px;
-    padding: 0;
-    width: 100%;
-}
+		float: none;
+		margin: 0 2% 3% 0;
+		height: 125px;
+		padding: 0;
+		width: 100%;
+	}
 
 #botao-cultura {
 
-    float: none;
-    height: 125px;
-    margin: 0 0 3% 0;
-    padding: 0;
-    width: 100%;
-}
+		float: none;
+		height: 125px;
+		margin: 0 0 3% 0;
+		padding: 0;
+		width: 100%;
+	}
 
 
-span.link-web {
-    float: right;
-color: #EEE;
-    font-size: 4em;
-    font-weight: bold;
-    margin: 35px 20px 0 0;
-text-transform: uppercase;
-/* ROTATE */
-/* Safari */
--webkit-transform: rotate(0deg);
-/* Firefox */
--moz-transform: rotate(0deg);
-/* IE */
--ms-transform: rotate(0deg);
-/* Opera */
--o-transform: rotate(0deg);
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-
-}
-
-span.link-design {
-    float: right;
-    font-size: 4em;
-    font-weight: bold;
-    margin: 35px 20px 0 0;
+	span.link-web {
+		float: right;
 	color: #EEE;
+		font-size: 4em;
+		font-weight: bold;
+		margin: 35px 20px 0 0;
 	text-transform: uppercase;
-/* ROTATE */
-/* Safari */
--webkit-transform: rotate(0deg);
-/* Firefox */
--moz-transform: rotate(0deg);
-/* IE */
--ms-transform: rotate(0deg);
-/* Opera */
--o-transform: rotate(0deg);
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+	/* ROTATE */
+	/* Safari */
+	-webkit-transform: rotate(0deg);
+	/* Firefox */
+	-moz-transform: rotate(0deg);
+	/* IE */
+	-ms-transform: rotate(0deg);
+	/* Opera */
+	-o-transform: rotate(0deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
 
-}
+	}
 
-span.link-cultura {
- color: #EEEEEE;
-    float: right;
-    font-size: 4em;
-    font-weight: bold;
-    margin: 35px 20px 0 0;
-    text-transform: uppercase;
-/* ROTATE */
-/* Safari */
--webkit-transform: rotate(0deg);
-/* Firefox */
--moz-transform: rotate(0deg);
-/* IE */
--ms-transform: rotate(0deg);
-/* Opera */
--o-transform: rotate(0deg);
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+	span.link-design {
+		float: right;
+		font-size: 4em;
+		font-weight: bold;
+		margin: 35px 20px 0 0;
+		color: #EEE;
+		text-transform: uppercase;
+	/* ROTATE */
+	/* Safari */
+	-webkit-transform: rotate(0deg);
+	/* Firefox */
+	-moz-transform: rotate(0deg);
+	/* IE */
+	-ms-transform: rotate(0deg);
+	/* Opera */
+	-o-transform: rotate(0deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
 
-}
+	}
 
-		.featured-posts {
+	span.link-cultura {
+	 color: #EEEEEE;
+		float: right;
+		font-size: 4em;
+		font-weight: bold;
+		margin: 35px 20px 0 0;
+		text-transform: uppercase;
+	/* ROTATE */
+	/* Safari */
+	-webkit-transform: rotate(0deg);
+	/* Firefox */
+	-moz-transform: rotate(0deg);
+	/* IE */
+	-ms-transform: rotate(0deg);
+	/* Opera */
+	-o-transform: rotate(0deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+
+	}
+
+	.featured-posts {
     height: 125px;
 	}
 
@@ -3585,13 +3597,4 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
 	margin-right: 7.6%;
 }
 
-/*
-Mobile Navigation for the WordPress twentyeleven theme.
-*/
-
-/* #Menu
-================================================== */
-nav .menu select {
-	display: none;	
-}
 
