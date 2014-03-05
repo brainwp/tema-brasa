@@ -2783,7 +2783,7 @@ display: none;
     letter-spacing: 0;
     line-height: 1em;
     margin: 0 0 5%;
-    padding: 20px 0 0 45px;
+    padding: 16px 0 4px 45px;
     text-transform: uppercase;
 }
 
@@ -2801,7 +2801,7 @@ display: none;
     letter-spacing: 0;
     line-height: 1em;
     margin: 0 0 4%;
-    padding: 20px 0 0 45px;
+    padding: 16px 0 4px 45px;
     text-transform: uppercase;
 }
 
@@ -2823,21 +2823,17 @@ display: none;
 	background: url("images/rss_icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     border-bottom: 1px solid #CCCCCC;
     margin: 0 0 3%;
-    padding: 0 0 1.6% 45px;
+    padding: 0 0 4px 45px;
 }
 
-.widget_rss h3.widget-titlwidgete a{
+.widget_rss h3.widget-title a{
 	color: #7ED2DA;
-    font-weight: bold;
     letter-spacing: 0;
-    line-height: 1em;
-    text-transform: uppercase;
-	height: 50px;
 	font-size: 1em !important;
 }
 
 
-#supplementary .first  a {
+#supplementary .first a {
 	color:#7ED2DA;
 	font-size: 1.1em;
 }
