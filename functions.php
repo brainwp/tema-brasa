@@ -6,6 +6,8 @@
 // Adiciona a função the_excerpt às Páginas
 add_post_type_support( 'page', 'excerpt' );
 
+add_theme_support( 'post-thumbnails' );
+
 
 	// Make Tema Brasa available for translation. Translations can be added to the /languages/ directory.
 	load_theme_textdomain( 'tema_brasa', get_template_directory() . '/languages' );
