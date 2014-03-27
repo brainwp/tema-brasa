@@ -16,7 +16,7 @@
 					<h3 class="entry-format"><?php _e( 'Featured', 'twentyeleven' ); ?></h3>
 				</hgroup>
 			<?php else : ?>
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<h1 class="entry-title <?php if ( is_home() ) echo "entry-title-blog"; ?>"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 			<?php endif; ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
@@ -26,7 +26,7 @@
 			<?php endif; ?>
 
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
-			<div class="comments-link">
+			<div class="comments-link <?php if ( is_home() ) echo "comments-link-blog"; ?>">
 				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'twentyeleven' ) . '</span>', _x( '1', 'comments number', 'twentyeleven' ), _x( '%', 'comments number', 'twentyeleven' ) ); ?>
 			</div>
 			<?php endif; ?>

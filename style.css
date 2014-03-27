@@ -599,6 +599,10 @@ a:hover {
 .entry-header .entry-meta {
 	padding-right: 76px;
 }
+.entry-title.entry-title-blog a {
+	font-size: 1.8em;
+	color: #b463a8;
+}
 .entry-title {
 	clear: both;
 	color: #222;
@@ -930,6 +934,9 @@ object {
 	width: 43px;
 	height: 36px;
 	
+}
+.entry-header .comments-link-blog {
+	display: none;
 }
 .entry-header .comments-link a:hover,
 .entry-header .comments-link a:focus,
@@ -1381,8 +1388,8 @@ section.feature-image.large img {
 /* Featured Slider */
 .featured-posts {
 	display: block;
-	height: 285px;
-	margin: 0;
+	height: 350px;
+	margin: 0 0 20px 0;
 	padding: 0;
 	position: relative;
 	overflow: hidden;
@@ -1489,6 +1496,27 @@ section.feature-image.large img {
 	padding-bottom: 0;
 	color: #0C586E;
 
+}
+
+/* Meta Slider */
+.caption-wrap {
+	background: transparent !important;
+	opacity: 1 !important;
+}
+
+.metaslider .caption {
+	font-size: 3em !important;
+	color: #FFF;
+	font-family: 'Source Sans Pro',Arial,Geneva,sans-serif;
+	text-transform: uppercase;
+	line-height: 1em;
+	text-shadow: 3px 3px 5px #000000;
+    filter: dropshadow(color=#000000, offx=3, offy=3);
+	max-width: 80%;
+}
+
+.metaslider .caption {
+    padding: 0 0 120px 60px !important;
 }
 
 /* Recent Posts */
@@ -1657,7 +1685,7 @@ section.recent-posts .other-recent-posts li:after {
 	margin: 0 0 1em;
 }
 .widget-title {
-	color: #edb80b;
+	color: #0c586e;
 	font-size: 1.6em;
 	font-weight: 500;
 	letter-spacing: 0.1em;
@@ -1666,7 +1694,20 @@ section.recent-posts .other-recent-posts li:after {
 	font-weight: bold;
 }
 
-h3.widget_twitter a{
+#recent-posts-2 .widget-title, #recent-comments-2 .widget-title {
+	line-height: 1.15em;
+	margin-bottom: 8px;
+}
+
+#recent-posts-2.widget ul li, #recent-comments-2.widget ul li {
+	line-height: 1.15em;
+}
+
+#recent-posts-2.widget ul li a, #recent-comments-2.widget ul li a {
+	font-weight: 400;
+}
+
+h3.widget_twitter a {
 	color: #B843A6;
 }
 
@@ -1681,8 +1722,17 @@ h3.widget_twitter a{
 .widget ul li {
 	color: #CCC;
 	font-size: 1em;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
+.widget ul li a {
+	color: #333;
+	font-weight: bold;
+}
+
+.widget ul li a:hover {
+	color: #b463a8;
+}
+
 .widget a {
 	text-decoration: none;
 	color: #b843a6;
