@@ -1509,8 +1509,9 @@ section.feature-image.large img {
 }
 
 .metaslider .caption {
-	font-size: 3em !important;
+	font-size: 3.5em !important;
 	color: #FFF;
+	font-weight: bold;
 	font-family: 'Source Sans Pro',Arial,Geneva,sans-serif;
 	text-transform: uppercase;
 	line-height: 1em;
@@ -1521,6 +1522,11 @@ section.feature-image.large img {
 
 .metaslider .caption {
     padding: 0 0 120px 60px !important;
+}
+
+.metaslider-flex a {
+	text-decoration: none;
+	display: block;
 }
 
 /* Recent Posts */
@@ -2916,19 +2922,19 @@ display: none;
     margin: 0 auto;
     display: block;
     color: #fff;
-    background:transparent url('images/btn-fechar-v2.png') no-repeat;
+    background:transparent url('images/btn-abrir-v2.png') no-repeat;
 
 }
 
 .slide-btn.active {
-    background:transparent url('images/btn-abrir-v2.png') no-repeat;
+    background:transparent url('images/btn-fechar-v2.png') no-repeat;
 }
 
 
 #panel {
     background: none repeat scroll 0 0 transparent;
     min-height: 300px;
-    display: block;
+    display: none;
     position:relative;
 	width: 100%;
 }
