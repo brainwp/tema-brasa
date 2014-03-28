@@ -489,7 +489,7 @@ a:hover {
 
 #branding {
 	position: relative;
-	z-index: 999;
+	z-index: 99;
 }
 
 #branding img {
@@ -3407,6 +3407,15 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	.page-template-showcase-php .featured-posts {
 		max-height: 125px;
 	}
+
+	.metaslider .caption {
+		font-size: 2em !important;
+		max-width: 90%;
+        padding: 0 0 100px 50px !important;
+	}
+
+
+
 	
 
 }
@@ -3451,8 +3460,14 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 			font-weight: bold;
 		}
 
+	.metaslider .caption {
+		font-size: 1.5em !important;
+        padding: 0 0 40px 30px !important;
+	}
+
+
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media (max-width: 300px)  {
 	body {
 		padding: 0;
 	}
@@ -3462,10 +3477,51 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	#branding {
 		border-top: none;
 	}
-	
-	article.feature-image.large .entry-title a {
-    font-size: 1.5em;
+
+	.intro p {
+	line-height: 22pt !important;
+	font-size: 0.8em;
 	}
+
+
+	#botao-web {
+	height: 85px;
+	}
+
+	span.link-web {
+		font-size: 3em;
+		margin: 10px;
+	}
+
+	#botao-design {
+	height: 85px;
+	}
+
+
+	span.link-design {
+		font-size: 3em;
+		margin: 10px;
+	}
+
+
+	#botao-cultura {
+	height: 85px;
+	}
+
+	span.link-cultura {
+		font-size: 3em;
+		margin: 10px;
+
+	}
+
+	.featured-posts {
+	height: 85px;
+	}
+
+	#logo-wordpress {
+	display: none;
+	}
+
 
 }
  
