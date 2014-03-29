@@ -9,13 +9,6 @@
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-			<?php 
-			if ( has_post_thumbnail() ) {
-			  the_post_thumbnail();
-			} 
-			?>
-
 		<header class="entry-header">
 			<?php if ( is_sticky() ) : ?>
 				<hgroup>
@@ -23,7 +16,14 @@
 					<h3 class="entry-format"><?php _e( 'Featured', 'twentyeleven' ); ?></h3>
 				</hgroup>
 			<?php else : ?>
-			<h1 class="entry-title <?php if ( is_home() ) echo "entry-title-blog"; ?>"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<h1 class="entry-title <?php if ( is_home() ) echo "entry-title-blog"; ?>">
+            	<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+			</h1>
+			<?php if ( has_post_thumbnail() ) : ?>
+				<div class="thumb-post">
+					<?php the_post_thumbnail(); ?>
+				</div><!-- .thumb-post -->
+			<?php endif; ?>
 			<?php endif; ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
