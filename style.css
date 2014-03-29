@@ -363,6 +363,7 @@ strong {
 }
 cite, em, i {
 	font-style: italic;
+	color: #999;
 }
 blockquote {
 	font-family: Georgia, "Bitstream Charter", serif;
@@ -2223,6 +2224,14 @@ p.comment-form-comment {
 }
 
 /* Three Footer Widget Areas */
+
+.rss-date {
+	clear: both;
+	display: block;
+	color: #999;
+	font-style: italic;
+}
+
 #supplementary .front-widgets {
 	float: left;
 	margin-right: 3.7%;
