@@ -760,6 +760,7 @@ img[class*="attachment-"] {
 img[class*="attachment-"] {
 	max-width: 600px;
 	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+	width: 100%;
 }
 img.size-full,
 img.size-large {
@@ -2360,6 +2361,18 @@ p.destaque {
     margin: 0;
 }
 
+#blog-header {
+	display: block;
+	max-width: 845px;
+	margin: 2%;
+	max-height: 335px;
+}
+
+#blog-header img {
+	width: 100%;
+	display: block;
+}
+
 
 #logo {
 max-width: 300px;
@@ -3093,9 +3106,9 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 		margin-bottom: 1.625em;
 	}
 	#main #secondary {
-		float: none;
-		margin: 0 7.6%;
-		width: auto;
+		float: left;
+		margin: 0 7.6% 4%;
+		width: 80%;
 	}
 	/* Simplify the showcase template */
 	.page-template-showcase-php .featured-posts {

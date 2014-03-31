@@ -109,7 +109,20 @@ jQuery(function() {
 <body <?php body_class(); ?>>
 <div id="page" class="single-page">
 	<header id="branding" role="banner">
-			
+		
+	<?php if ( is_single() || is_home() ):?>
+
+		
+		<div id="blog-header">
+			<a href="<?php echo home_url('/blog'); ?>">
+	
+				<img src="<?php echo get_stylesheet_directory_uri() . "/images/header-blog.jpg" ?>" alt="" />
+	
+			</a>
+		</div><!-- blog-header -->
+
+		<?php else : ?>
+
 		<div id="logo">
 			<a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>">
 	
@@ -124,18 +137,7 @@ jQuery(function() {
 			</a>
 		</div><!--logo end-->
 	
-			<?php
-				// Has the text been hidden?
-				if ( 'blank' == get_header_textcolor() ) :
-			?>
-				<div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
-				<?php get_search_form(); ?>
-				</div>
-			<?php
-				else :
-			?>
-				<?php // get_search_form(); ?>
-			<?php endif; ?>
+		<?php endif; ?>
 	</header><!-- #branding -->
 	
 		<nav id="access" role="navigation">
