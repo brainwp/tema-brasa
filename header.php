@@ -110,7 +110,7 @@ jQuery(function() {
 <div id="page" class="single-page">
 	<header id="branding" role="banner">
 		
-	<?php if ( is_single() || is_home() ):?>
+	<?php if ( is_singular('post') || is_home() ):?>
 
 		
 		<div id="blog-header">
