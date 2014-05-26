@@ -10,6 +10,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+	
+		<?php if ( ! post_password_required() && ! is_attachment() ) :
+				the_post_thumbnail();
+			endif; ?>
+			
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
