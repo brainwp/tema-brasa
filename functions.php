@@ -188,4 +188,22 @@ function remove_dashboard_widgets() {
 
 add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
 
+/**
+ * Desabilita o script HeartBeat no Admin, exceto em post.php e post-new.php.
+ * E aumenta o intervado para 60 segundos.
+ */
+add_action( 'init', 'brasa_deregister_heartbeat', 1 );
+function brasa_deregister_heartbeat() {
+	global $pagenow;
+
+	if ( 'post.php' != $pagenow && 'post-new.php' != $pagenow )
+		wp_deregister_script('heartbeat');
+}
+
+function brasa_settings_heartbeat( $settings ) {
+    $settings['interval'] = 60;
+    return $settings;
+}
+add_filter( 'heartbeat_settings', 'brasa_settings_heartbeat' );
+
 ?>
