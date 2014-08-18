@@ -46,19 +46,6 @@ jQuery(function(){
 });
 </script>
 
-<!-- Chamar e rodar o magnificPopup -->
-<script type="text/javascript">
-jQuery(function() {
-       jQuery('.open-popup-link').magnificPopup({
-         type:'inline',
-         midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-       });
-});
-       jQuery("document").ready(function() {
-       jQuery('.open-popup-link').trigger('click');
-		});
-</script>
-
 <!-- Google Code for ANALYTICS -->
 <script type="text/javascript">
 
@@ -75,54 +62,21 @@ jQuery(function() {
 
 </script>
 
-<!-- Google Code for Home Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 982097298;
-var google_conversion_language = "en";
-var google_conversion_format = "1";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "sFOACK7euQgQkrum1AM";
-var google_conversion_value = 0;
-var google_remarketing_only = false;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="home">
+<div id="page" class="hfeed">
 	<header id="branding" role="banner">
 			
-		<div id="logo">
-			<a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>">
+		<div id="img-destacada">
+			
+		</div><!-- img-destacada -->
 	
-			<?php
-				// Check to see if the header image has been removed
-				$header_image = get_header_image();
-				if ( ! empty( $header_image ) ) :
-			?>
-				<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
-			<?php endif; // end check for removed header image ?>	
-		
-			</a>
-		</div><!--logo end-->
-
-			<?php
-				// Has the text been hidden?
-				if ( 'blank' == get_header_textcolor() ) :
-			?>
-				<div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
-				<?php get_search_form(); ?>
-				</div>
-			<?php
-				else :
-			?>
-				<?php // get_search_form(); ?>
-			<?php endif; ?>
 	</header><!-- #branding -->
+	
+		<!--	<nav id="access" role="navigation">
+			<?php // wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</nav> #access -->
 
 
 	<div id="main">

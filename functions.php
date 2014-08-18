@@ -60,15 +60,6 @@ function tema_brasa_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array(
-		'name' => __( 'Barra Lateral da Showcase', 'tema_brasa' ),
-		'id' => 'sidebar-2',
-		'description' => __( 'The sidebar for the optional Showcase Template', 'twentyeleven' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
 
 	register_sidebar( array(
 		'name' => __( 'Primeira Area do Rodape', 'tema_brasa' ),
@@ -99,8 +90,40 @@ function tema_brasa_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+
+
+	register_sidebar( array(
+		'name' => __( 'Primeira Area do Rodape das LandPages', 'tema_brasa' ),
+		'id' => 'sidebar-6',
+		'description' => __( 'An optional widget area for your land page footer', 'twentyeleven' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Segunda Area do Rodape das LandPages', 'tema_brasa' ),
+		'id' => 'sidebar-7',
+		'description' => __( 'An optional widget area for your land page footer', 'twentyeleven' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Terceira Area do Rodape das LandPages', 'tema_brasa' ),
+		'id' => 'sidebar-8',
+		'description' => __( 'An optional widget area for your land page footer', 'twentyeleven' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'tema_brasa_widgets_init' );
+
 
 
 /**
@@ -119,12 +142,48 @@ function twentyeleven_body_classes( $classes ) {
 	if ( function_exists( 'is_multi_author' ) && ! is_multi_author() )
 		$classes[] = 'single-author';
 
-	if ( is_singular() && ! is_home() && ! is_page_template( 'showcase.php' ) && ! is_page_template( 'sidebar-page.php' ) )
+	if ( is_singular() && ! is_home() && ! is_page_template( 'sidebar-page.php' ) )
 		$classes[] = 'singular';
 
 	return $classes;
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
+
+
+/**
+ * Create a nicely formatted and more specific title element text for output
+ * in head of document, based on current view.
+ *
+ * @since Twenty Fourteen 1.0
+ *
+ * @param string $title Default title text for current view.
+ * @param string $sep Optional separator.
+ * @return string The filtered title.
+ */
+function twentyfourteen_wp_title( $title, $sep ) {
+	global $paged, $page;
+
+	if ( is_feed() ) {
+		return $title;
+	}
+
+	// Add the site name.
+	$title .= get_bloginfo( 'name' );
+
+	// Add the site description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) ) {
+		$title = "$title $sep $site_description";
+	}
+
+	// Add a page number if necessary.
+	if ( $paged >= 2 || $page >= 2 ) {
+		$title = "$title $sep " . sprintf( __( 'Page %s', 'twentyfourteen' ), max( $paged, $page ) );
+	}
+
+	return $title;
+}
+add_filter( 'wp_title', 'twentyfourteen_wp_title', 10, 2 );
 
 
 //include new jQuery

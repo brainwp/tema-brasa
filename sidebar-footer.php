@@ -15,7 +15,7 @@
  *
  * If none of the sidebars have widgets, then let's bail early.
  */
-if ( ! is_active_sidebar( 'sidebar-2' ) && ! is_active_sidebar( 'sidebar-3' ) )
+if ( ! is_active_sidebar( 'sidebar-3' ) )
 	return;
 
 // If we get this far, we have widgets. Let do this.
@@ -36,7 +36,7 @@ if ( ! is_active_sidebar( 'sidebar-2' ) && ! is_active_sidebar( 'sidebar-3' ) )
 	<?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
 	<div class="last front-widgets">
 		<?php dynamic_sidebar( 'sidebar-5' ); ?>
-	</div><!-- .second -->
+	</div><!-- .last -->
 	<?php endif; ?>
 
-</div><!-- #secondary -->
+</div><!-- #supplementary -->
