@@ -2861,6 +2861,12 @@ display: none;
    margin-bottom: 0;
 }
 
+.mu_register {
+    margin: 0 auto;
+    padding: 2em 0;
+    width: 53% !important;
+}
+
 /* FOOTER */
 
 .widget_twitter_timeline {

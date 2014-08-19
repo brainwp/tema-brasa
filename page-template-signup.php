@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Signup
+Template Name: Signup Beta (not working)
 */
 ?>
 <?php
@@ -68,6 +68,7 @@ do_action( 'before_signup_form' );
 ?>
 <div id="content" class="widecolumn">
 <div class="mu_register">
+
 <?php
 function show_blog_form($blogname = '', $blog_title = '', $errors = '') {
         global $current_site;
