@@ -10,7 +10,7 @@ add_theme_support( 'post-thumbnails' );
 
 
 	// Make Tema Brasa available for translation. Translations can be added to the /languages/ directory.
-	load_theme_textdomain( 'tema_brasa', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'twentyeleven', get_template_directory() . '/languages' );
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
@@ -142,7 +142,7 @@ function twentyeleven_body_classes( $classes ) {
 	if ( function_exists( 'is_multi_author' ) && ! is_multi_author() )
 		$classes[] = 'single-author';
 
-	if ( is_singular() && ! is_home() && ! is_page_template( 'sidebar-page.php' ) )
+	if ( is_singular() && ! is_home() && ! is_page_template( 'showcase.php' ) && ! is_page_template( 'sidebar-page.php' ) )
 		$classes[] = 'singular';
 
 	return $classes;

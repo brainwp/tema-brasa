@@ -151,10 +151,12 @@ body {
 	float: none;
 	margin: 0;
 }
+
 .error404 #primary #content {
     float: none;
-	margin: 3em auto 1em;
-    max-width: 900px;
+    margin: 0 auto;
+    max-width: 53%;
+    padding-top: 1em;
 }
 
 /* Alignment */
@@ -2852,6 +2854,11 @@ display: none;
 	font-size: 3em;
 	font-weight: bold;
 	line-height: 48px;
+}
+
+.erro404 {
+   font-size: 6em;
+   margin-bottom: 0;
 }
 
 /* FOOTER */
