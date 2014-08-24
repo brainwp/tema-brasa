@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tema Portfolio en español\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-25 22:51-0600\n"
+"PO-Revision-Date: 2011-01-29 11:45+0100\n"
+"Last-Translator: Erling Hamso <erling@hamso.com>\n"
+"Language-Team: PNTE <blogs@educacion.navarra.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: Spain\n"
+"X-Poedit-KeywordsList: __;_e;_c;esc_attr_e;_n\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:14
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Dette er litt flaut, ikke sant?"
+
+#: 404.php:18
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "Det ser ikke ut som om vi klarer å finne det du ser etter. Kanskje du finner det du trenger ved å bruke menylenkene i headeren eller søkefunksjonen i footeren?"
+
+#: 404.php:25
+msgid "Most Used Categories"
+msgstr "Mest brukte kategorier"
+
+#: archive.php:16
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Daglig arkiv <span>%s</span>"
+
+#: archive.php:18
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Månedlig arkiv <span>%s</span>"
+
+#: archive.php:20
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Årlig arkiv <span>%s</span>"
+
+#: archive.php:22
+msgid "Blog Archives"
+msgstr "Bloggarkiv"
+
+#: author.php:14
+#, php-format
+msgid "Author Archives: <span class=\"vcard\">%s</span>"
+msgstr "Forfatterarkiv <span class=\"vcard\">%s</span>"
+
+#: category.php:13
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Kategoriarkiv '%s"
+
+#: comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Dette innlegget er passordbeskyttet. Skriv inn passordet for å lese kommentarene."
+
+#: comments.php:21
+#, php-format
+msgid "One Response to %2$s"
+msgstr "Ett svar til %2$s"
+
+#: comments.php:28
+#: comments.php:40
+msgid "Comment navigation"
+msgstr "Kommentarnavigasjon"
+
+#: comments.php:29
+#: comments.php:41
+msgid "&larr; Older Comments"
+msgstr "&larr; Eldre kommentarer"
+
+#: comments.php:30
+#: comments.php:42
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer &rarr;"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "Kommentarer er lukket"
+
+#: footer.php:38
+msgid "Powered by"
+msgstr "Drevet av"
+
+#: footer.php:38
+msgid "A Semantic Personal Publishing Platform"
+msgstr "En semantisk personlig publiseringsplattform"
+
+#: footer.php:38
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:38
+msgid "Portfolio"
+msgstr "Portefølje"
+
+#: full-width-page.php:24
+#: image.php:82
+#: loop.php:36
+#: page.php:21
+msgid "Pages:"
+msgstr "Sider:"
+
+#: full-width-p
