@@ -5,83 +5,95 @@
  * @package Portfolio Press
  */
 
-get_header(); ?>
+get_header( 'portfolio' ); ?>
 
-	<div id="primary">
-		<div id="content" role="main">
+	<div id="coluna-direita">
+		<div id="content">
 
-		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<h1 class="entry-title"><?php the_title(); ?></h1>
+					</header><!-- .entry-header -->
 
-					<div class="entry-meta">
+					<div class="entry-content">
+
+						<div id="slider-single">
+
+							<div class="list_carousel">
+								<ul id="foo2">
+									<?php
+									$args = array(
+										'post_type' => 'attachment',
+										'numberposts' => -1,
+										'post_status' => null,
+										'post_parent' => $post->ID,
+										'orderby' => 'rand'
+									);
+
+									$anexos = get_posts ( $args );
+
+									if ( $anexos ) {
+										foreach ( $anexos as $anexo ) { ?>
+
+											<?php
+											$attachment_id = $anexo->ID;
+											$image_attributes = wp_get_attachment_image_src( $attachment_id, 'galeria' );
+											$attachment_page = get_attachment_link( $attachment_id );
+											$description = $anexo->post_content;
+											$url = wp_get_attachment_url( $attachment_id );
+											?>
+											<li>
+												<?php /* if ($description):
+                            echo '<div id="desc-slide">' . $description . '</div>';
+                            endif; */ ?>
+												<a href="<?php echo $url; ?>" class="thickbox image">
+													<span class="roll"><p class="p-roll">Ampliar</p></span>
+													<img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" alt="<?php echo apply_filters('the_title', $anexo->post_title); ?>"></a>
+											</li>
+										<?php } } ?>
+								</ul>
+								<div class="clearfix"></div>
+								<a class="prev" id="prev2" href="#"><span>anterior</span></a>
+								<a class="next" id="next2" href="#"><span>seguinte</span></a>
+							</div>
+
+						</div><!-- #slider-single -->
+
+						<div id="conteudo-single">
+							<?php the_content(); ?>
+						</div><!-- #conteudo-single -->
+
+
 						<?php
-							printf( __( '<span class="meta-prep meta-prep-author">Posted on </span><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s" pubdate>%3$s</time></a> <span class="meta-sep"> by </span> <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s">%6$s</a></span>', 'portfoliopress' ),
-								get_permalink(),
-								get_the_date( 'c' ),
-								get_the_date(),
-								get_author_posts_url( get_the_author_meta( 'ID' ) ),
-								sprintf( esc_attr__( 'View all posts by %s', 'portfoliopress' ), get_the_author() ),
-								get_the_author()
-							);
+						// Pega os dados e salva em variáveis
+						$metabrasa_url = get_post_meta($post->ID,'metabrasa_url',TRUE);
+						$metabrasa_url = filter_var($metabrasa_url, FILTER_SANITIZE_URL);
 						?>
-					</div><!-- .entry-meta -->
-				</header><!-- .entry-header -->
 
-				<div class="entry-content">
-                
-                <?php if ( has_post_thumbnail() && of_get_option('portfolio_images', "1") ) {
-                	if ( of_get_option( 'layout') == 'layout-1col' ) {
-	                	the_post_thumbnail( 'portfolio-fullwidth' );
-                	} else {
-	                	the_post_thumbnail( 'portfolio-large' );
-                	}
-				}
-				?>
+						<?php if (empty($metabrasa_url)) {
+						} else { ?>
+							<a href="<?php echo $metabrasa_url; ?>" target="_blank">
+								<div id="box-single">
+									<span>Acesse!</span>
+								</div><!-- #box-single -->
+							</a>
+						<?php }	?>
 
-                
-					<?php the_content(); ?>
-					<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'portfoliopress' ), 'after' => '</div>' ) ); ?>
-				</div><!-- .entry-content -->
+						<div id="hack-100"></div>
 
-				<footer class="entry-meta">
-					<?php
-						$cat_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
-						$tag_list = get_the_term_list( $post->ID, 'portfolio_tag', '', ', ', '' );
-						$utility_text = '';
-						if ( ( $cat_list ) && ( '' ==  $tag_list ) )
-							$utility_text = __( 'This entry was posted in %1$s.', 'portfoliopress' );
-						if ( ( '' != $tag_list ) && ( '' ==  $cat_list ) )
-							$utility_text = __( 'This entry was tagged %2$s.', 'portfoliopress' );
-						if ( ( '' != $cat_list ) && ( '' !=  $tag_list ) )
-							$utility_text = __( 'This entry was posted in %1$s and tagged %2$s.', 'portfoliopress' );
-						printf(
-							$utility_text,
-							$cat_list,
-							$tag_list
-						);
-					?>
+					</div><!-- .entry-content -->
 
-					<?php edit_post_link( __( 'Edit', 'portfoliopress' ), '<span class="edit-link">', '</span>' ); ?>
-				</footer><!-- .entry-meta -->
-			</article><!-- #post-<?php the_ID(); ?> -->
-			
-			<nav id="nav-below">
-				<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'portfolioplus' ); ?></h1>
-				<div class="nav-previous"><?php previous_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Previous post link', 'portfolioplus' ) . '</span>' ); ?></div>
-				<div class="nav-next"><?php next_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Next post link', 'portfolioplus' ) . '</span> %title' ); ?></div>
-			</nav><!-- #nav-below -->
+					<div id="editar-single">
+						<?php edit_post_link( __( 'Editar', 'portfoliopress' ), '<span class="edit-link">', '</span>' ); ?>
+					</div>
 
-			<?php if ( comments_open() ) {
-				comments_template( '', true );
-            } ?>
+				</article><!-- #post-<?php the_ID(); ?> -->
 
-		<?php endwhile; // end of the loop. ?>
+			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
-	</div><!-- #primary -->
+	</div><!-- #coluna-direita -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

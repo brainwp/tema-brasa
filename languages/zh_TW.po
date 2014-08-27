@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 中文版 Portfolio Press\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-25 22:51-0600\n"
+"PO-Revision-Date: 2011-04-10 16:20+0800\n"
+"Last-Translator: Sunny Lau <sunnylau0603@yahoo.com.hk>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: HONG KONG\n"
+"X-Poedit-KeywordsList: __;_e;_c;esc_attr_e;_n\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:14
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Error 404 - 找不到網頁"
+
+#: 404.php:18
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "我們似乎無法找到您正在尋找的東西，或許以下其中一個連結或搜尋可以幫助您。"
+
+#: 404.php:25
+msgid "Most Used Categories"
+msgstr "最常用的分類"
+
+#: archive.php:16
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "每日彙整：<span>%s</span>"
+
+#: archive.php:18
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "每月彙整：<span>%s</span>"
+
+#: archive.php:20
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "每年彙整：<span>%s</span>"
+
+#: archive.php:22
+msgid "Blog Archives"
+msgstr "博客彙整"
+
+#: author.php:14
+#, php-format
+msgid "Author Archives: <span class=\"vcard\">%s</span>"
+msgstr "作者彙整：<span class=\"vcard\">%s</span>"
+
+#: category.php:13
+#, php-format
+msgid "Category Archives: %s"
+msgstr "分類彙整：'%s'"
+
+#: comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "這文章受密碼保護，請輸入密碼查看迴響。"
+
+#: comments.php:21
+#, php-format
+msgid "One Response to %2$s"
+msgstr "%2$s 有一個回應"
+
+#: comments.php:28
+#: comments.php:40
+msgid "Comment navigation"
+msgstr "迴響導覽"
+
+#: comments.php:29
+#: comments.php:41
+msgid "&larr; Older Comments"
+msgstr "&larr; 舊迴響"
+
+#: comments.php:30
+#: comments.php:42
+msgid "Newer Comments &rarr;"
+msgstr "新迴響 &rarr;"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "迴響功能已關閉"
+
+#: footer.php:38
+msgid "Powered by"
+msgstr "Powered by"
+
+#: footer.php:38
+msgid "A Semantic Personal Publishing Platform"
+msgstr "語義的個人出版平台"
+
+#: footer.php:38
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:38
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: full-width-page.php:24
+#: image.php:82
+#: loop.php:36
+#: page.php:21
+msgid "Pages:"
+msgstr "分頁："
+
+#: full-width-page.php:25
+#: image.php:31
+#: image.php:96
+#: loop.php:45
+#: page.php:22
+msgid "Edit"
+msgstr "編輯"
+
+#: full-width-portfolio.php:

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS do form de agendamento no WP-ADMIN */
+.metabrasa-table {
+}
+
+.metabrasa-table th {
+	text-align: left;
+	font-weight: bold;
+	padding-left: 3px;
+}
+
+.metabrasa-table td {
+	margin: 0 0 10px 0;
+	display: block;
+}
+
+.metabrasa-table-desc {
+	font-style: italic;
+	font-size: 11px;
+	color: #666;
+}
+
