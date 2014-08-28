@@ -13,5 +13,5 @@ get_header();
 
 get_template_part( 'content-portfolio' );
 
-get_footer();
+get_footer('simples');
 ?>
