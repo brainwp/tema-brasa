@@ -9,6 +9,6 @@
 get_header('portfolio');
 
 get_template_part( 'content-portfolio' );
-	
-get_footer();
+
+get_footer('portfolio');
 ?>

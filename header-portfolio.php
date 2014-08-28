@@ -42,19 +42,19 @@
 			$classe_cultura = null;
            // $wpurl = get_bloginfo ('wpurl');
          
-            if ( is_tax('portfolio_category','design') !== false || has_term('design','portfolio_category')) {
+            if ( is_tax('jetpack-portfolio-type','design') !== false || has_term('design','jetpack-portfolio-type')) {
                 $classe_design = ' atual-design';
             }
-            if ( is_tax('portfolio_category','web') !== false || has_term('web','portfolio_category')) {
+            if ( is_tax('jetpack-portfolio-type','web') !== false || has_term('web','jetpack-portfolio-type')) {
 	            $classe_web = ' atual-web';
             }
-            if ( is_tax('portfolio_category','cultura') !== false || has_term('cultura','portfolio_category')) {
+            if ( is_tax('jetpack-portfolio-type','cultura') !== false || has_term('cultura','jetpack-portfolio-type')) {
 	            $classe_cultura = ' atual-cultura';
             }
              ?>
-            <li class="menu-web<?php echo $classe_web; ?>"><a href="<?php bloginfo('url'); ?>/portfolio/web">Web</a></li>
-			<li class="menu-design<?php echo $classe_design; ?>"><a href="<?php bloginfo('url'); ?>/portfolio/design">Design</a></li>
-            <li class="menu-cultura<?php echo $classe_cultura; ?>"><a href="<?php bloginfo('url'); ?>/portfolio/cultura">Cultura</a></li>
+            <li class="menu-web<?php echo $classe_web; ?>"><a href="<?php bloginfo('url'); ?>/project-type/web">Web</a></li>
+			<li class="menu-design<?php echo $classe_design; ?>"><a href="<?php bloginfo('url'); ?>/project-type/design">Design</a></li>
+            <li class="menu-cultura<?php echo $classe_cultura; ?>"><a href="<?php bloginfo('url'); ?>/project-type/cultura">Cultura</a></li>
         </ul>
     </div><!-- #menu-brasa -->
     

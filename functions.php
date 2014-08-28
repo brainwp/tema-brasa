@@ -273,8 +273,6 @@ function brasa_settings_heartbeat( $settings ) {
 }
 
 add_filter( 'heartbeat_settings', 'brasa_settings_heartbeat' );
-// Insere o CPT Portolio
-require_once( get_stylesheet_directory() . '/extensions/portfolio-post-type/portfolio-post-type.php' );
 
 // Insere os metaboxes (MetaBrasa) no CPT Portolio
 require_once( get_stylesheet_directory() . '/metaboxes-portfolio.php' );
@@ -294,7 +292,7 @@ function load_caroufredsel() {
 	wp_register_script( 'caroufredsel', $path_theme . '/js/jquery.carouFredSel-6.2.1-packed.js', array( 'jquery' ), '6.2.1', true );
 	wp_enqueue_script( 'caroufredsel_pre', $path_theme . '/js/caroufredsel_pre.js', array( 'caroufredsel' ), '', true );
 	wp_enqueue_script( 'custom-hover', $path_theme . '/js/custom-hover.js' );
-	if ( is_tax( 'portfolio_category' ) || is_singular( 'portfolio' ) ) {
+	if ( is_tax( 'jetpack-portfolio-type' ) || is_singular( 'jetpack-portfolio' ) ) {
 		wp_enqueue_style( 'style-portfolio', get_stylesheet_directory_uri() . '/style-portfolio.css' );
 	}
 	else{

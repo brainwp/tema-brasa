@@ -96,4 +96,4 @@ get_header( 'portfolio' ); ?>
 		</div><!-- #content -->
 	</div><!-- #coluna-direita -->
 
-<?php get_footer(); ?>
+<?php get_footer('portfolio'); ?>
