@@ -314,4 +314,22 @@ function add_themescript() {
 
 add_action( 'init', 'add_themescript' );
 
+//change slug portfolio tax
+add_action( 'init', 'tax_portfolio_jetpack', 99999999999 );
+function tax_portfolio_jetpack() {
+
+	// changing the category permastruct
+	$taxonomy = 'jetpack-portfolio-type';
+
+	// change the settings at will but make sure 'slug' is set to NULL
+	$category_rewrite = array(
+		'with_front'                 => true,
+		'hierarchical'               => true,
+		'slug' => NULL, // we don't want no slug!
+	);
+
+	// overwrites default category permastruct
+	add_permastruct( $taxonomy, "%$taxonomy%", $category_rewrite );
+}
+
 ?>
