@@ -315,21 +315,15 @@ function add_themescript() {
 add_action( 'init', 'add_themescript' );
 
 //change slug portfolio tax
-add_action( 'init', 'tax_portfolio_jetpack', 99999999999 );
-function tax_portfolio_jetpack() {
-
-	// changing the category permastruct
-	$taxonomy = 'jetpack-portfolio-type';
-
-	// change the settings at will but make sure 'slug' is set to NULL
-	$category_rewrite = array(
-		'with_front'                 => true,
-		'hierarchical'               => true,
-		'slug' => NULL, // we don't want no slug!
-	);
-
-	// overwrites default category permastruct
-	add_permastruct( $taxonomy, "%$taxonomy%", $category_rewrite );
+//add_action( 'jetpack-portfolio-type_rewrite_rules', 'tax_portfolio_jetpack' );
+function tax_portfolio_jetpack($rule) {
+	//var_dump($rule);
+	foreach ($rule as $key => $value){
+		unset ($rule[$key]);
+		$new_key = str_replace('project-type', 'portfolio-type', $key);
+		$rule[$new_key] = $value;
+	}
+	return $rule;
 }
 
 ?>
