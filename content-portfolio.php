@@ -78,5 +78,3 @@ if ( post_password_required() ) {
 </div><!-- #portfolio -->
 </div><!-- #coluna-direita -->
 <?php } ?>
-
-<?php get_footer(); ?>

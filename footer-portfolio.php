@@ -8,7 +8,7 @@
 	</div><!-- #main -->
 	</div><!-- #wrapper -->
     
-<?php wp_footer(); ?>
+<?php wp_footer('simples'); ?>
 
 </body>
 </html>
