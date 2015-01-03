@@ -2305,8 +2305,6 @@ body.page-template-showcase-php {
 
 }
 
-
-
 p {
 	line-height: 1.3em;
     margin-bottom: 13px;
@@ -2318,8 +2316,8 @@ textarea {
 	background: #f9f9f9;
 	border: 1px solid #999;
 	padding: 7px;
+	width: 90% !important;
 }
-
 
 #separador {
     clear: both;
@@ -2358,8 +2356,6 @@ p.destaque {
 }
 
 /* HEADER */
-
-
 #branding hgroup {
     margin: 0;
 }
@@ -2375,7 +2371,6 @@ p.destaque {
 	width: 100%;
 	display: block;
 }
-
 
 #logo {
 max-width: 300px;
@@ -2405,9 +2400,9 @@ margin: 3% 7% 1% 0;
 }
 
 #intro-bloco {
-max-width: 525px;
-float: right;
-margin-right: 45px;
+	max-width: 525px;
+	float: right;
+	margin-right: 45px;
 }
 
 #access {
@@ -2474,7 +2469,6 @@ margin-right: 45px;
 	left: 100%;
 	top: 0;
 	width: 100%;
-
 }
 
 #access ul ul ul li.menu-item{
@@ -2489,7 +2483,6 @@ margin-right: 45px;
     line-height: 2em;
     padding: 1px 1em;
     text-decoration: none;
-
 }
 
 #access li:hover > a,
@@ -2512,7 +2505,6 @@ margin-right: 45px;
 	font-weight: bold;
 	background: #b843a6;
 }
-
 
 #menu-redes-sociais {
 	height: 34px;
@@ -2548,7 +2540,7 @@ a.link_facebook:hover {
 }
 
 a.link_youtube {
-   background: url("images/midias-sociais.png") no-repeat scroll -76px 0 transparent;
+    background: url("images/midias-sociais.png") no-repeat scroll -76px 0 transparent;
     height: 35px;
     position: absolute;
     width: 35px;
@@ -2580,11 +2572,8 @@ a.link_youtube:hover {
    background: none repeat scroll 0 0 #0C586E !important;
 }
 
-
 /* HOME */
-
 #slider-home {
-
     height: 368px;
     margin: 25px auto 40px;
     width: 760px;
@@ -2597,7 +2586,6 @@ a.link_youtube:hover {
 
 /* Botoes Home
 -------------------------------------------------------------- */
-
 section.botoes-home {
    display: block;
     float: none;
@@ -2619,9 +2607,7 @@ h1.portfolio-heading {
 	width: 98%;
 }
 
-a.PortfolioAnchor {
-text-decoration: none;
-}
+a.PortfolioAnchor { text-decoration: none; }
 
 #botao-web {
 	background:#eebc0e;
@@ -2633,7 +2619,7 @@ text-decoration: none;
 }
 
 #botao-web:hover {
-background: url("images/text_laranja_pq.jpg") repeat scroll 0 0 #f2cd3e;
+	background: url("images/text_laranja_pq.jpg") repeat scroll 0 0 #f2cd3e;
 }
 
 #botao-design {
