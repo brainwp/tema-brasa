@@ -46,19 +46,6 @@ jQuery(function(){
 });
 </script>
 
-<!-- Chamar e rodar o magnificPopup -->
-<script type="text/javascript">
-jQuery(function() {
-       jQuery('.open-popup-link').magnificPopup({
-         type:'inline',
-         midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-       });
-});
-       jQuery("document").ready(function() {
-       jQuery('.open-popup-link').trigger('click');
-		});
-</script>
-
 <!-- Google Code for ANALYTICS -->
 <script type="text/javascript">
 
@@ -104,7 +91,7 @@ var google_remarketing_only = false;
 				$header_image = get_header_image();
 				if ( ! empty( $header_image ) ) :
 			?>
-				<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+				<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php get_bloginfo('name'); ?>" />
 			<?php endif; // end check for removed header image ?>	
 		
 			</a>

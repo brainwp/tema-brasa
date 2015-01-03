@@ -195,13 +195,17 @@ add_filter( 'wp_title', 'twentyfourteen_wp_title', 10, 2 );
 //include new jQuery
 
 function my_scripts_method() {
-	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' );
+	//wp_deregister_script( 'jquery' );
+	//wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'mobile-nav', get_stylesheet_directory_uri() . '/js/mobile_nav.js', array( 'jquery' ) );
-// Chamando o LigthBox Magnific!
-	wp_enqueue_script( 'jquery.magnific-popup', get_stylesheet_directory_uri() . '/js/jquery.magnific-popup.js', array( 'jquery' ), '', true );
-	wp_enqueue_style( 'magnific-popup', get_stylesheet_directory_uri() . '/js/magnific-popup.css' );
+	if ( ! is_home() && ! is_front_page() ) {
+		// Chamando o LigthBox Magnific!
+		wp_enqueue_script( 'jquery.magnific-popup', get_stylesheet_directory_uri() . '/js/jquery.magnific-popup.js', array( 'jquery' ), '', true );
+		wp_enqueue_style( 'magnific-popup', get_stylesheet_directory_uri() . '/js/magnific-popup.css' );
+		wp_enqueue_script( 'custom-magnific-popup', get_stylesheet_directory_uri() . '/js/custom-magnific-popup.js', array( 'jquery.magnific-popup' ), '', true );
+	}
+	wp_enqueue_script( 'main-js', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );

@@ -2298,11 +2298,9 @@ body.page {
 }
 
 body.page-template-showcase-php {
-
-	background: url("images/bg-ao-meio-final.jpg") #F3F1EE repeat fixed center top;
-	 margin: 0;
-	 padding: 0;
-
+	background: url("images/bg-brasa.jpg") #F3F1EE repeat fixed center top;
+	margin: 0;
+	padding: 0;
 }
 
 p {
