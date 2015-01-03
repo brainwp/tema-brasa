@@ -2313,6 +2313,7 @@ p {
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
 	background: #f9f9f9;
 	border: 1px solid #999;
@@ -3101,6 +3102,16 @@ Mobile Navigation for the WordPress twentyeleven theme.
 ================================================== */
 nav .menu select {
 	display: none;	
+}
+
+/* Contact Form */
+.contact-form > div {
+	margin-bottom: 15px;
+}
+
+.zilla-one-third h4 {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 
