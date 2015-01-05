@@ -600,7 +600,7 @@ a:hover {
 }
 .entry-title,
 .entry-header .entry-meta {
-	padding-right: 76px;
+	padding-right: 55px;
 }
 .entry-title.entry-title-blog a {
 	font-size: 1.8em;
@@ -631,7 +631,13 @@ a:hover {
 	clear: both;
 	font-size: 1.1em;
 	line-height: 18px;
+	margin-top: 10px;
 }
+
+footer.entry-meta {
+	font-size: 0.9em;
+}
+
 .entry-meta a {
 	font-weight: bold;
 }
@@ -917,6 +923,8 @@ object {
 #author-description {
 	float: left;
 	margin-left: 108px;
+	font-size: 1.2em;
+	color: #333;
 }
 #author-description h2 {
 	color: #000;
@@ -1738,7 +1746,6 @@ h3.widget_twitter a {
 	margin-left: 1.5em;
 }
 .widget ul li {
-	color: #CCC;
 	font-size: 1em;
 	margin-bottom: 10px;
 }
@@ -2043,7 +2050,7 @@ a.comment-reply-link > span {
 	margin: 0 auto 1.625em;
 	padding: 1.625em;
 	position: relative;
-	width: 52.9%;
+	width: 62.9%;
 }
 #respond input[type="text"],
 #respond textarea {
