@@ -330,4 +330,12 @@ function tax_portfolio_jetpack($rule) {
 	return $rule;
 }
 
+function shortcode_date( $atts ){
+	$time = strtotime( date( 'd-m-Y' ) );
+	$final = date('d\/m', strtotime('+1 month', $time));
+    return '<span class="shortcode_date">' . $final . '</span>';
+}
+
+add_shortcode( 'data', 'shortcode_date' );
+
 ?>
