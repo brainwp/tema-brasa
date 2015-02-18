@@ -338,4 +338,17 @@ function shortcode_date( $atts ){
 
 add_shortcode( 'data', 'shortcode_date' );
 
+require_once get_stylesheet_directory() . '/inc/custom-types.php';
+if (!function_exists('get_field')) {
+  function get_field($field) {
+  	global $post;
+  	return get_post_meta($post->ID, $field, true);
+  }
+} 
+if (!function_exists('the_field')) {
+  function the_field($field) {
+  	global $post;
+  	echo get_field($field);
+  }
+} 
 ?>

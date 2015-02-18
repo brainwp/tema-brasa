@@ -42,9 +42,21 @@ array( "name" => "Frase",
 	array( "type" => "close"),
 	
 	/** Fim Toggle Rodapé */
- 
-);
+array( "name" => "Pagina Equipe",
+	"type" => "section"),
+array( "type" => "open"),
 
+array( "name" => "Titulo da pagina",
+	"desc" => "",
+	"id" => "team_title",
+	"type" => "text",
+	"std" => ""),
+array( "name" => "Sub-titulo da pagina",
+	"desc" => "",
+	"id" => "team_subtitle",
+	"type" => "text",
+	"std" => "")
+);
 
 function mytheme_add_admin() {
  

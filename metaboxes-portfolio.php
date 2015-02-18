@@ -17,5 +17,51 @@ $portfolio_metabox->set_fields(
 		)
 	)
 );
-
+$team_metabox = new Odin_Metabox(
+	'team_metabox', // Slug/ID do Metabox (obrigatório)
+	'Team', // Nome do Metabox  (obrigatório)
+	'equipe', // Slug do Post Type, sendo possível enviar apenas um valor ou um array com vários (opcional)
+	'normal', // Contexto (opções: normal, advanced, ou side) (opcional)
+	'high' // Prioridade (opções: high, core, default ou low) (opcional)
+);
+$team_metabox->set_fields(
+	array(
+		array(
+			'id'          => 'team_position',
+			'label'       => 'Cargo',
+			'type'        => 'text',
+			'description' => ''
+		),
+		array(
+			'id'          => 'team_phone',
+			'label'       => 'Telefone',
+			'type'        => 'text',
+			'description' => ''
+		),
+		array(
+			'id'          => 'team_email',
+			'label'       => 'E-mail',
+			'type'        => 'text',
+			'description' => ''
+		),
+		array(
+			'id'          => 'team_twitter',
+			'label'       => 'Twitter',
+			'type'        => 'text',
+			'description' => ''
+		),
+		array(
+			'id'          => 'team_linkedin',
+			'label'       => 'Linkedin',
+			'type'        => 'text',
+			'description' => ''
+		),
+		array(
+			'id'          => 'team_github',
+			'label'       => 'Github',
+			'type'        => 'text',
+			'description' => ''
+		),
+	)
+);
 ?>
