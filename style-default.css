@@ -3987,9 +3987,9 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
    Team profiles
    ================================================== */
  .post-type-archive-equipe #content {
- 	width: 94%;
+ 	width: 75%;
  	float: left;
- 	margin: 0;
+ 	margin: 0 0 0 25%;
  	padding-left: 40px;
  }
  .post-type-archive-equipe .intro {
@@ -4019,7 +4019,7 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 .profile {
 	position: relative;
 	margin: 0px 0px 20px;
-	width: 50%;
+	width: 100%;
 	float: left;
 }
 .profile:nth-child(even) {
@@ -4030,15 +4030,15 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
   top: 0;
 }
 .profile-header img {
-	width: 100px;
-	height: 100px;
+	width: 140px;
+	height: 140px;
 	float: left;
 }
 .profile-content {
   font-size: 14px;
   padding: 20px 20px 0 0;
   line-height: 1.4em;
-  margin: 0 0 0 120px;
+  margin: 10px 0 35px 160px;
 }
 .profile-content h3 {
   margin: 0;
@@ -4062,8 +4062,8 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 }
 .profile-footer {
   position: absolute;
-  top: 121px;
-  width: 100px;
+  top: 150px;
+  width: 140px;
   text-align: center;
 }
 .profile-footer a {
@@ -4081,15 +4081,15 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
   color: #000;
 }
 .profile-footer i {
-  font-size: 18px;
+  font-size: 22px;
   position: relative;
 }
 .profile-footer i.icon-envelope {
-  font-size: 16px;
+  font-size: 18px;
   top: -1px;
 }
 .profile-footer i.icon-linkedin {
-  font-size: 16px;
+  font-size: 18px;
   top: -1px;
 }
 .img-circle{
