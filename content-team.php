@@ -23,7 +23,12 @@ if ( has_post_thumbnail($post->ID) ) {
 		</div>
 		
 		<div class="profile-footer">
-			<a href="tel:<?php the_field('team_phone'); ?>"><i class="genericon genericon-handset"></i></a>
+			<?php if ( $tel = get_field('team_phone') ): ?>
+			<a class="tel-href" href="tel:<?php echo $tel; ?>">
+				<i class="genericon genericon-handset"></i>
+				<div class="tel-toggle"><?php echo $tel; ?></div><!-- .tel-toggle -->
+			</a>
+			<?php endif; ?>
 			<a href="mailto:<?php echo antispambot( get_field('team_email') ); ?>"><i class="genericon genericon-mail"></i></a>
 			<?php if ( $twitter = get_field('team_twitter') ): ?>
 			<a href="<?php echo $twitter; ?>"><i class="genericon genereicon-twitter"></i></a>

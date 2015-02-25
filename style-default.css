@@ -4093,3 +4093,18 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 .img-circle{
 	border-radius:50%;
 }
+.tel-toggle{
+	display:none;
+	width:100%;
+}
+.profile-footer a{
+	opacity:1.0;
+	transition:200ms ease all;
+}
+.profile-footer.hide-all a{
+	opacity:0;
+	transition:200ms ease all;
+}
+.profile-footer.hide-all a.tel-href{
+	opacity:1.0 !important;
+}

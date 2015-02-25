@@ -148,6 +148,10 @@ function twentyeleven_body_classes( $classes ) {
 		$classes[] = 'singular';
 	}
 
+	if(wp_is_mobile()){
+		$classes[] = 'is-mobile';
+	}
+	
 	return $classes;
 }
 
