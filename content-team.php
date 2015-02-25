@@ -38,7 +38,7 @@ if ( has_post_thumbnail($post->ID) ) {
 			<?php endif; ?>
 			<a href="mailto:<?php echo antispambot( get_field('team_email') ); ?>"><i class="genericon genericon-mail"></i></a>
 			<?php if ( $twitter = get_field('team_twitter') ): ?>
-			<a href="<?php echo $twitter; ?>"><i class="genericon genericon-twitter"></i></a>
+			<a href="<?php echo $twitter; ?>"><i class="genericon genericon-twitter-alt"></i></a>
 			<?php endif; ?>
 			<?php if ( $linkedin = get_field('team_linkedin') ): ?>
 			<a href="<?php echo $linkedin; ?>"><i class="genericon genericon-linkedin"></i></a>
