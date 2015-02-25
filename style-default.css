@@ -3987,8 +3987,10 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
    Team profiles
    ================================================== */
  .post-type-archive-equipe #content {
-	margin: 5% 3% 0 28%;
-	width: 72%;
+ 	width: 94%;
+ 	float: left;
+ 	margin: 0;
+ 	padding-left: 40px;
  }
  .post-type-archive-equipe .intro {
  	padding-left: 0;

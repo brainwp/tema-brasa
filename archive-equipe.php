@@ -6,13 +6,12 @@
  * @package Tema Brasa
  */
 
-get_header(); ?>
+get_header('page'); ?>
 
-	<div id="primary" class="full-width">
-		<div id="content" role="main">
-
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header intro">
+		<div id="primary">
+			<div id="content" role="main">
+				<article>
+					<header class="entry-header">
 					<h1 class="entry-title">
 						<?php
 							if ( $title = get_option('team_title') ) {
@@ -22,21 +21,16 @@ get_header(); ?>
 							}
 						?>
 					</h1>
-					<p class="lead"><?php echo get_option('team_subtitle'); ?></p><!-- .lead -->
-				</header><!-- .entry-header -->
+				    </header><!-- .entry-header -->
+				    
+				    <?php while ( have_posts() ) : the_post(); ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+				        <?php get_template_part( 'content', 'team' ); ?>
+ 
+       				<?php endwhile; // end of the loop. ?>
 
-					<?php get_template_part( 'content', 'team' ); ?>
-
-				<?php endwhile; ?>
-
-			</article><!-- #post-<?php the_ID(); ?> -->
-
-			<?php comments_template( '', true ); ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
+				</article>
+			</div><!-- #content -->
+		</div><!-- #primary -->
 
 <?php get_footer('simples'); ?>
