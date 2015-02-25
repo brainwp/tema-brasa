@@ -13,7 +13,15 @@ get_header(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header intro">
-					<h1 class="entry-title"><?php echo get_option('team_title'); ?></h1>
+					<h1 class="entry-title">
+						<?php
+							if ( $title = get_option('team_title') ) {
+								echo $title;
+							} else {
+								echo "Equipe Brasa";
+							}
+						?>
+					</h1>
 					<p class="lead"><?php echo get_option('team_subtitle'); ?></p><!-- .lead -->
 				</header><!-- .entry-header -->
 

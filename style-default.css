@@ -3990,6 +3990,15 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	margin: 5% 3% 0 28%;
 	width: 72%;
  }
+ .post-type-archive-equipe .intro {
+ 	padding-left: 0;
+ }
+ .post-type-archive-equipe .entry-title {
+ 	color: #B843A6;
+	font-size: 36px;
+	font-weight: bold;
+	padding-bottom: 0;
+ }
 .profiles {
   margin-bottom: -20px;
 }
