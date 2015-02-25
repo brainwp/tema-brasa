@@ -20,6 +20,11 @@ if ( has_post_thumbnail($post->ID) ) {
 			<h3><?php the_title(); ?></h3>
 			<p class="lead position"><?php the_field('team_position'); ?></p>
 			<?php the_content(); ?>
+			<?php if ( $blog = get_field('team_blog') ): ?>
+			<a class="blog-link" href="<?php echo $blog; ?>">
+				<?php _e('Ver posts no blog','tema-brasa');?>
+			</a>
+			<?php endif; ?>
 		</div>
 		
 		<div class="profile-footer">

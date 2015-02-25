@@ -62,6 +62,12 @@ $team_metabox->set_fields(
 			'type'        => 'text',
 			'description' => ''
 		),
+		array(
+			'id'          => 'team_blog',
+			'label'       => __('Posts no blog','tema-brasa'),
+			'type'        => 'text',
+			'description' => ''
+		),
 	)
 );
 ?>
