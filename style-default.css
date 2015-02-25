@@ -4108,3 +4108,14 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 .profile-footer.hide-all a.tel-href{
 	opacity:1.0 !important;
 }
+@media (max-width: 700px) {
+	article.profile{
+		width:100% !important;
+		clear:both;
+	}
+	article.profile .profile-footer{
+		margin-top: 20px;
+		position: relative;
+		top:inherit;
+	}
+}
