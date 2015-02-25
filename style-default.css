@@ -3986,6 +3986,10 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 /* ==================================================
    Team profiles
    ================================================== */
+ .post-type-archive-equipe #content {
+	margin: 5% 3% 0 28%;
+	width: 72%;
+ }
 .profiles {
   margin-bottom: -20px;
 }
@@ -4015,15 +4019,15 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
   top: 0;
 }
 .profile-header img {
-	width:100px;
-	height:100px;
+	width: 100px;
+	height: 100px;
 	float: left;
 }
 .profile-content {
   font-size: 14px;
-  padding: 27px 20px 0 0;
+  padding: 20px 20px 0 0;
   line-height: 1.4em;
-  margin: 0 0 0 125px;
+  margin: 0 0 0 120px;
 }
 .profile-content h3 {
   margin: 0;
@@ -4036,9 +4040,9 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 }
 .profile-content:before {
   content: '';
-  width: 36px;
-  height: 3px;
-  background: #dededc;
+  width: 80px;
+  height: 2px;
+  background: #B463A8;
   position: absolute;
   top: 0;
 }
@@ -4055,6 +4059,9 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
   line-height: 18px;
   margin: 0 3px;
   display: inline-block;
+}
+.profile-footer a {
+	text-decoration: none;
 }
 .profile-footer a:hover i {
   color: #595959;

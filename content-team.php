@@ -5,7 +5,7 @@
 global $post;
 $thumb_src = null;
 if ( has_post_thumbnail($post->ID) ) {
-	$src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+	$src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
 	$thumb_src = $src[0];
 }
 ?>
