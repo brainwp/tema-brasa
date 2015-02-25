@@ -151,7 +151,7 @@ function twentyeleven_body_classes( $classes ) {
 	if(wp_is_mobile()){
 		$classes[] = 'is-mobile';
 	}
-	
+
 	return $classes;
 }
 
@@ -354,5 +354,12 @@ if (!function_exists('the_field')) {
   	global $post;
   	echo get_field($field);
   }
-} 
+}
+function team_query( $query ) {
+    if ( is_post_type_archive('equipe') ) {
+        $query->set( 'orderby', 'rand' );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'team_query' ); 
 ?>

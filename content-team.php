@@ -24,6 +24,8 @@ if ( has_post_thumbnail($post->ID) ) {
 			<a class="blog-link" href="<?php echo $blog; ?>">
 				<?php _e('Ver posts no blog','tema-brasa');?>
 			</a>
+		    <?php else: ?>
+		    <div class="clear-both"></div><!-- .clear-both -->
 			<?php endif; ?>
 		</div>
 		
@@ -43,6 +45,9 @@ if ( has_post_thumbnail($post->ID) ) {
 			<?php endif; ?>
 			<?php if ( $github = get_field('team_github') ): ?>
 			<a href="<?php echo $github; ?>"><i class="genericon genericon-github"></i></a>
+			<?php endif; ?>
+			<?php if ( $wporg = get_field('team_wporg') ): ?>
+			<a href="<?php echo $wporg; ?>" title="<?php _e('Perfil no WordPress.org','tema-brasa'); ?>"><i class="genericon genericon-wordpress"></i></a>
 			<?php endif; ?>
 		</div>
 	</article>

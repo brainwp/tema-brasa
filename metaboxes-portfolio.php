@@ -68,6 +68,12 @@ $team_metabox->set_fields(
 			'type'        => 'text',
 			'description' => ''
 		),
+		array(
+			'id'          => 'team_wporg',
+			'label'       => __('Conta no WordPress.org','tema-brasa'),
+			'type'        => 'text',
+			'description' => ''
+		),
 	)
 );
 ?>
