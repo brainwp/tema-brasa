@@ -21,6 +21,7 @@ get_header('page'); ?>
 							}
 						?>
 					</h1>
+					<p><?php if($title = get_option('team_subtitle')) echo $title;?></p>
 				    </header><!-- .entry-header -->
 				    
 				    <?php while ( have_posts() ) : the_post(); ?>
