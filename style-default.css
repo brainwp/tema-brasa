@@ -4135,3 +4135,26 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 		top:inherit;
 	}
 }
+
+.short-loop {
+	display: block;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.short-loop .each {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	height: 150px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.short-loop .each:hover {
+	background-color: #F9F9F9;
+	border-color: #428BCA;
+}
+.short-loop .desc {
+	color: #444;
+	font-weight: lighter;
+}
