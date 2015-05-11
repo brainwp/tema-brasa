@@ -20,15 +20,17 @@
             	<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h1>
 			<?php if ( has_post_thumbnail() ) : ?>
+			<a href="<?php the_permalink(); ?>" rel="bookmark">				
 				<div class="thumb-post">
 					<?php the_post_thumbnail(); ?>
 				</div><!-- .thumb-post -->
+			</a>
 			<?php endif; ?>
 			<?php endif; ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
-				<?php the_time('j \d\e F \d\e Y ') ?>
+				<?php the_time('j \d\e F \d\e Y ') ?> | Por <?php the_author_posts_link(); ?> 
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 

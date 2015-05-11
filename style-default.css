@@ -299,10 +299,10 @@ body {
 
 #secondary {
 	background: none repeat scroll 0 0 #FFFFFF;
-    float: left;
+	float: left;
 	margin: 5% 0 3% 0;
-    padding: 3%;
-    width: 24%;
+	padding: 3%;
+	width: 24%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -343,9 +343,9 @@ body {
 }
 .page-template-showcase-php #content,
 .left-sidebar.page-template-showcase-php #content {
-   margin: 0 auto;
-    max-width: 845px;
-    width: auto;
+	margin: 0 auto;
+	max-width: 845px;
+	width: auto;
 }
 .page-template-showcase-php section.recent-posts {
 	float: right;
@@ -365,10 +365,10 @@ body {
 }
 
 .error404 #primary #content {
-    float: none;
-    margin: 0 auto;
-    max-width: 53%;
-    padding-top: 1em;
+	float: none;
+	margin: 0 auto;
+	max-width: 53%;
+	padding-top: 1em;
 }
 
 /* Alignment */
@@ -535,7 +535,7 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-    margin: 1em 0;
+	margin: 1em 0;
 }
 
 /* Text elements */
@@ -1582,11 +1582,11 @@ section.feature-image.large .showcase-heading {
 	display: none;
 }
 section.feature-image.large .hentry {
-    border-bottom: medium none;
-    left: 8%;
-    margin: 1.5em 5% 0 0;
-    position: absolute;
-    top: 0;
+	border-bottom: medium none;
+	left: 8%;
+	margin: 1.5em 5% 0 0;
+	position: absolute;
+	top: 0;
 }
 article.feature-image.large .entry-title a {
 	-moz-border-radius: 3px;
@@ -2091,6 +2091,9 @@ section.ephemera .entry-title a span {
 
 /* =Comments
 ----------------------------------------------- */
+#comments {
+	margin-left: 30px;
+}
 
 #comments-title {
 	color: #666;
@@ -2124,7 +2127,7 @@ section.ephemera .entry-title a span {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	margin: 0 0 1.625em;
-	padding: 1.625em;
+	padding: 1.625em 2.5em;
 	position: relative;
 }
 .commentlist .pingback {
@@ -2136,16 +2139,13 @@ section.ephemera .entry-title a span {
 	margin: 0;
 }
 .commentlist .children li.comment {
-	background: #fff;
+	background: #F6F6F6;
 	border-left: 1px solid #ddd;
 	-moz-border-radius: 0 3px 3px 0;
 	border-radius: 0 3px 3px 0;
 	margin: 1.625em 0 0;
-	padding: 1.625em;
+	padding: 1.625em 2.5em;
 	position: relative;
-}
-.commentlist .children li.comment .fn {
-	display: block;
 }
 .comment-meta .fn {
 	font-style: normal;
@@ -2157,7 +2157,7 @@ section.ephemera .entry-title a span {
 }
 .commentlist .children li.comment .comment-meta {
 	line-height: 1.625em;
-	margin-left: 50px;
+	margin-left: 0;
 }
 .commentlist .children li.comment .comment-content {
 	margin: 1.625em 0 0;
@@ -2175,10 +2175,10 @@ section.ephemera .entry-title a span {
 	-webkit-box-shadow: 0 1px 2px #ccc;
 	-moz-box-shadow: 0 1px 2px #ccc;
 	box-shadow: 0 1px 2px #ccc;
-	left: -102px;
+	top: 2.2em;
+	left: -20px;
 	padding: 0;
 	position: absolute;
-	top: 0;
 }
 .commentlist > li:before {
 	content: url(images/comment-arrow.png);
@@ -2193,9 +2193,9 @@ section.ephemera .entry-title a span {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	left: 2.2em;
 	padding: 0;
 	top: 2.2em;
+	left: -20px;
 }
 a.comment-reply-link {
 	background: #eee;
@@ -2259,10 +2259,10 @@ a.comment-reply-link > span {
 	border: 1px solid #d3d3d3;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	margin: 0 auto 1.625em;
+	margin: 20px 0 40px;
 	padding: 1.625em;
-	position: relative;
-	width: 62.9%;
+	width: 68.9%;
+	float: left;
 }
 #respond input[type="text"],
 #respond textarea {
@@ -2288,9 +2288,6 @@ a.comment-reply-link > span {
 #respond .comment-form-url label,
 #respond .comment-form-comment label {
 	background: #eee;
-	-webkit-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
-	-moz-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
-	box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
 	color: #555;
 	display: inline-block;
 	font-size: 13px;
@@ -2298,8 +2295,9 @@ a.comment-reply-link > span {
 	min-width: 60px;
 	padding: 4px 10px;
 	position: relative;
-	top: 40px;
+	top: 10px;
 	z-index: 1;
+	border-radius: 5px;
 }
 #respond input[type="text"]:focus,
 #respond textarea:focus {
@@ -2317,7 +2315,7 @@ a.comment-reply-link > span {
 	font-weight: bold;
 	left: 75%;
 	position: relative;
-	top: 5px;
+	top: 0;
 	z-index: 1;
 }
 #respond span.required {
@@ -2422,22 +2420,37 @@ p.comment-form-comment {
 ----------------------------------------------- */
 
 #colophon {
-	background: url(images/bg-rodape.jpg) #454545 repeat scroll center top;
+	background: url(images/bg-rodape.jpg) #454545 repeat scroll center bottom;
 	clear: both;
-	font-family: Arial, Geneva, sans-serif;
+	font-family: 'Arial', 'Geneva', sans-serif;
 	padding-top: 20px;
 	margin-top:0;
 	width: 100%;
-	min-height: 170px;
+	min-height: 155px;
 	height: auto;
 	overflow: hidden;
+	margin-bottom: -10px;
 }
 #supplementary {
 	padding: 0 3%;
 	overflow: hidden;
 	width: 94%;
 	margin-top: 1.5%;
-	}
+
+}
+#colophon .widget_recent_entries ul li {
+  margin-bottom: 20px;
+}
+#colophon .widget_recent_entries ul li a {
+	color: #fff;
+}
+#colophon .widget_recent_entries ul li a:hover {
+	color: #E5C511;
+}
+#colophon .widget_recent_entries .widget-title {
+	color: #7ed2da;
+}
+
 
 /* Two Footer Widget Areas */
 #supplementary.two .widget-area {
@@ -2505,23 +2518,23 @@ select.selectnav {margin:0 auto;} /* centers select */
 body {
 
 	background: url("images/bg-ao-meio-final.jpg") #F3F1EE repeat fixed center top;
-	 margin: 0;
-	 padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-body.page {
+body.page, body.post-type-archive-equipe{
 
-    background: url("images/bg-2000-1250.jpg") #F3F1EE repeat fixed center top;
-    margin: 0;
-    padding: 0;
+	background: url("images/bg-2000-1250.jpg") #F3F1EE repeat fixed center top;
+	margin: 0;
+	padding: 0;
 
 }
 
 body.single {
 
-    background: url("images/bg-2000-1250.jpg") #F3F1EE repeat fixed center top;
-    margin: 0;
-    padding: 0;
+	background: url("images/bg-2000-1250.jpg") #F3F1EE repeat fixed center top;
+	margin: 0;
+	padding: 0;
 
 }
 
@@ -2547,23 +2560,23 @@ textarea {
 }
 
 #separador {
-    clear: both;
-    position: relative;
-    width: 100%;
-	}
-	
+	clear: both;
+	position: relative;
+	width: 100%;
+}
+
 p.destaque {
-    color: #111111;
-    font-size: 1.6em;
-    line-height: 1.2em;
-    padding: 0;
-    width: 100%;
+	color: #111111;
+	font-size: 1.6em;
+	line-height: 1.2em;
+	padding: 0;
+	width: 100%;
 }
 
 #page .single-page {
-    background: url("images/bg-2000-1250.jpg") repeat scroll center right #F3F1EE;
-    margin: 0 auto;
-    padding: 0;
+	background: url("images/bg-2000-1250.jpg") repeat scroll center right #F3F1EE;
+	margin: 0 auto;
+	padding: 0;
 }
 
 #page.hfeed {
@@ -2637,9 +2650,9 @@ margin: 3% 7% 1% 0;
 }
 
 #intro-bloco {
-	max-width: 525px;
+	max-width: 560px;
 	float: right;
-	margin-right: 45px;
+	margin-right: 20px;
 }
 
 #access {
@@ -2672,7 +2685,7 @@ margin: 3% 7% 1% 0;
 	color: #eee;
 	display: block;
 	line-height: 2em;
-    padding: 1px 1em;
+	padding: 1px 1em;
 	text-decoration: none;
 	background:  none repeat scroll 0 0 #666;
 	-webkit-border-radius: 8px;
@@ -2716,10 +2729,10 @@ margin: 3% 7% 1% 0;
 
 #access ul ul ul li a{
 	color: #EEEEEE;
-    display: block;
-    line-height: 2em;
-    padding: 1px 1em;
-    text-decoration: none;
+	display: block;
+	line-height: 2em;
+	padding: 1px 1em;
+	text-decoration: none;
 }
 
 #access li:hover > a,
@@ -2747,8 +2760,8 @@ margin: 3% 7% 1% 0;
 	height: 34px;
 	width: 113px;
 	float: right;
-    margin-right: 90px;
-    margin-top: 20px;
+	margin-right: 90px;
+	margin-top: 20px;
 }
 
 a.link_twitter {
@@ -2764,10 +2777,10 @@ a.link_twitter:hover {
 }
 
 a.link_facebook {
-   background: url("images/midias-sociais.png") no-repeat scroll -36px 0 transparent;
-    height: 35px;
-    position: absolute;
-    width: 38px;
+	background: url("images/midias-sociais.png") no-repeat scroll -36px 0 transparent;
+	height: 35px;
+	position: absolute;
+	width: 38px;
 	padding: 0 !important;
 	margin-left: 35px;
 }
@@ -2777,10 +2790,10 @@ a.link_facebook:hover {
 }
 
 a.link_youtube {
-    background: url("images/midias-sociais.png") no-repeat scroll -76px 0 transparent;
-    height: 35px;
-    position: absolute;
-    width: 35px;
+	background: url("images/midias-sociais.png") no-repeat scroll -76px 0 transparent;
+	height: 35px;
+	position: absolute;
+	width: 35px;
 	padding: 0 !important;
 	margin-left: 74px;
 }
@@ -3100,16 +3113,16 @@ display: none;
 
 .widget_twitter_timeline h3.widget-title{
 	background: url("images/twitter_icon.png") no-repeat scroll 0 15px rgba(0, 0, 0, 0);
-    border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
 	color: #FFF;   
 	font-size: 1.6em;
-    font-weight: bold;
-    height: 36px;
-    letter-spacing: 0;
-    line-height: 1em;
-    margin: 0 0 5%;
-    padding: 16px 0 4px 45px;
-    text-transform: uppercase;
+	font-weight: bold;
+	height: 36px;
+	letter-spacing: 0;
+	line-height: 1em;
+	margin: 0 0 5%;
+	padding: 16px 0 4px 45px;
+	text-transform: uppercase;
 }
 
 .widget_quick-flickr-widget {
@@ -3118,16 +3131,16 @@ display: none;
 
 .widget_quick-flickr-widget h3.widget-title{
 	background: url("images/flickr_icon.png") no-repeat scroll 0 15px rgba(0, 0, 0, 0);
-    border-bottom: 1px solid #CCCCCC;
-    color: #B843A6;
-    font-size: 1.6em;
-    font-weight: bold;
-    height: 36px;
-    letter-spacing: 0;
-    line-height: 1em;
-    margin: 0 0 4%;
-    padding: 16px 0 4px 45px;
-    text-transform: uppercase;
+	border-bottom: 1px solid #CCCCCC;
+	color: #B843A6;
+	font-size: 1.6em;
+	font-weight: bold;
+	height: 36px;
+	letter-spacing: 0;
+	line-height: 1em;
+	margin: 0 0 4%;
+	padding: 16px 0 4px 45px;
+	text-transform: uppercase;
 }
 
 .widget_rss a{
@@ -3146,14 +3159,14 @@ display: none;
 
 .widget_rss h3.widget-title {
 	background: url("images/rss_icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border-bottom: 1px solid #CCCCCC;
-    margin: 0 0 3%;
-    padding: 0 0 4px 45px;
+	border-bottom: 1px solid #CCCCCC;
+	margin: 0 0 3%;
+	padding: 0 0 4px 45px;
 }
 
 .widget_rss h3.widget-title a{
 	color: #7ED2DA;
-    letter-spacing: 0;
+	letter-spacing: 0;
 	font-size: 1em !important;
 }
 
@@ -3168,8 +3181,8 @@ display: none;
 }
 
 #toggle-footer{
-    height: 35px;
-    background: none repeat scroll 0 0 transparent;
+	height: 35px;
+	background: none repeat scroll 0 0 transparent;
 	margin: 0 3%;
 }
 
@@ -3193,17 +3206,17 @@ display: none;
 
 
 #panel {
-    background: none repeat scroll 0 0 transparent;
-    min-height: 300px;
-    display: none;
-    position:relative;
+	background: none repeat scroll 0 0 transparent;
+	min-height: 300px;
+	display: none;
+	position:relative;
 	width: 100%;
 }
 
 #content-rodape {
 	margin: 0 auto;
-    max-width: 900px;
-    min-height: 140px;
+	max-width: 900px;
+	min-height: 140px;
 	color: #FFF;
 }
 
@@ -3212,9 +3225,13 @@ display: none;
 	background: url(images/wordpress-logo.png) left no-repeat;
 	width: 52px;
 	height: 52px;
-    margin: 0 3% 0 0;
+	margin: 0 8px 5px 0;
+	opacity: 0.8;
 }
 
+#logo-wordpress:hover {
+	opacity: 1;
+}
 .a-logo-wordpress {
 	width: 52px;
 	height: 52px;
@@ -3227,31 +3244,37 @@ display: none;
 	width: 25px;
 	height: 27px;
 	text-indent: -99999px;
-	margin-left: 3px; 
+	margin-left: 3px;
+	margin-top: 1px;
+	opacity: 0.6;
+}
+
+.logo-cc:hover {
+	opacity: 1;
 }
 
 #dados-footer {
-    float: left;
-    width: 48%;
+	float: left;
+	width: 48%;
 	font-size: 1em;
-    margin: 0 0 3% 2%;
+	margin: 0 0 3% 2%;
 }
 
 #licenca-footer {
-	margin: 0 15px 0 15px;
+	margin: 0 15px 5px 8px;
 }
 
 #descricao-footer {
-	margin: 0 15px 0 15px;
+	margin: 0 15px 5px 8px;
 }
 
 #essencial {
 	float: left;
-    width: 48%;
+	width: 48%;
 }
 
 #frase-footer {
-    margin: 15px 15px 0;
+	margin: 13px 10px 0px;
 	float: right;
 	font-size: 1.1em;
 }
@@ -3289,8 +3312,8 @@ a.button{	color: #fff;	background: #009933;	  padding: 4px 12px;	  -moz-border-r
     border: 3px solid white;
     margin: 3px 3px;
     outline: 1px solid #CCCCCC;
-	width: 70px;
-	height: 70px;
+	width: 70px !important;
+	height: 70px !important;
 }
 
 .white-popup {
