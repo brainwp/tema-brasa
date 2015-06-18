@@ -4147,7 +4147,7 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	background-color: #FFF;
 	border: 1px solid #CCC;
 	display: block;
-	height: 170px;
+	height: 200px;
 	padding-bottom: 15px;
 	padding-top: 15px;
 }
@@ -4169,5 +4169,8 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	}
 	.short-loop .each {
 		margin-bottom: 15px;
+	}
+	.short-loop .each{
+	float:inherit !important;
 	}
 }
