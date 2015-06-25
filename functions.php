@@ -423,7 +423,7 @@ function clipping_query_shortcode($atts) {
 add_shortcode("loop", "clipping_query_shortcode");
 
 function exclude_category( $wp_query ) {
-	if( !is_admin() && is_main_query() ) {
+	if( !is_admin() && $wp_query->is_main_query() ) {
 		$wp_query->set( 'cat', '-83' );
 	}
 }
