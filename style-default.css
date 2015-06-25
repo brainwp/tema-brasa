@@ -4170,7 +4170,7 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	background-color: #FFF;
 	border: 1px solid #CCC;
 	display: block;
-	height: 150px;
+	height: 200px;
 	padding-bottom: 15px;
 	padding-top: 15px;
 }
@@ -4183,6 +4183,9 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	display: block;
 	font-weight: lighter;
 }
+.short-loop .each:nth-child(even){
+	float:right;
+}
 @media (max-width: 500px) {
 	.short-loop {
 		text-align: center;
@@ -4190,4 +4193,11 @@ As informações são acumulativas, o que vocês fez para max. 600px não precis
 	.short-loop .each {
 		margin-bottom: 15px;
 	}
+<<<<<<< HEAD
 }
+=======
+	.short-loop .each{
+	float:inherit !important;
+	}
+}
+>>>>>>> a5f9d3880f9d1c1dbf999f8f922440705d535f5d
