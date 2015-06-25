@@ -400,7 +400,7 @@ function clipping_query_shortcode($atts) {
       $temp_excerpt = get_the_content($post->ID);
       
       // output all findings - CUSTOMIZE TO YOUR LIKING
-      $output .= "<span class='col-md-6 each'>";
+      $output .= "<span class='col-md-5 each'>";
       $output .= "<h3>" . $temp_title . "</h3>";
       $output .= "<span class='desc'>";
       $output .= $temp_excerpt;
