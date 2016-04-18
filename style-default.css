@@ -3356,7 +3356,8 @@ nav .menu select {
 }
 
 .contact-form label.checkbox, .contact-form label.radio {
-font-weight: 300 !important;
+	font-weight: 300 !important;
+	margin-left: 20px;
 }
 
 .zilla-one-third h4 {
