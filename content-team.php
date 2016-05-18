@@ -9,7 +9,7 @@ if ( has_post_thumbnail($post->ID) ) {
 	$thumb_src = $src[0];
 }
 ?>
-	<article class="col-sm-12 profile">
+	<article class="col-sm-10 profile">
 		<div class="profile-header">
 			<?php if ( $thumb_src ): ?>
 			<img src="<?php echo $thumb_src; ?>" alt="<?php the_title(); ?>" class="img-circle">
