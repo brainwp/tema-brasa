@@ -46,22 +46,6 @@ jQuery(function(){
 });
 </script>
 
-<!-- Google Code for ANALYTICS -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-40375752-1']);
-  _gaq.push(['_setDomainName', 'brasa.art.br']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
 <!-- Google Code for Home Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */
@@ -82,18 +66,18 @@ var google_remarketing_only = false;
 <body <?php body_class(); ?>>
 <div id="page" class="home">
 	<header id="branding" role="banner">
-			
+
 		<div id="logo">
 			<a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>">
-	
+
 			<?php
 				// Check to see if the header image has been removed
 				$header_image = get_header_image();
 				if ( ! empty( $header_image ) ) :
 			?>
 				<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php get_bloginfo('name'); ?>" />
-			<?php endif; // end check for removed header image ?>	
-		
+			<?php endif; // end check for removed header image ?>
+
 			</a>
 		</div><!--logo end-->
 

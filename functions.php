@@ -240,7 +240,7 @@ function my_custom_login_logo() {
                 }
                 body { background-image:url(' . get_bloginfo( 'stylesheet_directory' ) . '/images/bg-2000-1250.jpg) !important; }
                 #login { padding: 70px 0 0; }
-                
+
     </style>';
 }
 
@@ -349,7 +349,7 @@ if (!function_exists('get_field')) {
   	global $post;
   	return get_post_meta($post->ID, $field, true);
   }
-} 
+}
 if (!function_exists('the_field')) {
   function the_field($field) {
   	global $post;
@@ -362,13 +362,13 @@ function team_query( $query ) {
         return;
     }
 }
-add_action( 'pre_get_posts', 'team_query' ); 
+add_action( 'pre_get_posts', 'team_query' );
 
 function clipping_query_shortcode($atts) {
 
    // EXAMPLE USAGE:
    // [loop the_query="showposts=100&post_type=page&post_parent=453"]
-   
+
    // Defaults
    extract(shortcode_atts(array(
       "the_query" => '',
@@ -379,9 +379,9 @@ function clipping_query_shortcode($atts) {
    $the_query = preg_replace('~&#x0*([0-9a-f]+);~ei', 'chr(hexdec("\\1"))', $the_query);
    $the_query = preg_replace('~&#0*([0-9]+);~e', 'chr(\\1)', $the_query);
 
-   // query is made               
+   // query is made
    query_posts($the_query);
-   
+
    // Reset and setup variables
    $output = '';
    $temp_title = '';
@@ -391,14 +391,14 @@ function clipping_query_shortcode($atts) {
    if (!empty($title)) {
 	   $output .=  "<h3>" . $title . "</h3>";
    }
-   
+
    // the loop
    if (have_posts()) : while (have_posts()) : the_post();
-   
+
       $temp_title = get_the_title($post->ID);
       $temp_link = get_permalink($post->ID);
       $temp_excerpt = get_the_content($post->ID);
-      
+
       // output all findings - CUSTOMIZE TO YOUR LIKING
       $output .= "<span class='col-md-5 each'>";
       $output .= "<h3>" . $temp_title . "</h3>";
@@ -406,19 +406,19 @@ function clipping_query_shortcode($atts) {
       $output .= $temp_excerpt;
       $output .= "</span>";
       $output .= "</span>";
-          
+
    endwhile; else:
-   
+
       $output .= "nothing found.";
-      
+
    endif;
-   
+
    wp_reset_query();
 
    $output .= "</div>";
 
    return $output;
-   
+
 }
 add_shortcode("loop", "clipping_query_shortcode");
 
@@ -435,3 +435,30 @@ function exclude_widget_categories( $args ){
 	return $args;
 }
 add_filter("widget_categories_args","exclude_widget_categories");
+
+
+// Include the Google Analytics Tracking Code (ga.js)
+// @ https://developers.google.com/analytics/devguides/collection/gajs/
+function google_analytics_tracking_code(){
+
+	?>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-40375752-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+		<?php 
+}
+
+// include GA tracking code before the closing head tag
+add_action('wp_head', 'google_analytics_tracking_code');
+
+// OR include GA tracking code before the closing body tag
+// add_action('wp_footer', 'google_analytics_tracking_code');
